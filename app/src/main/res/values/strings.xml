@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">AppFondosFinancieros</string>
+    <string name="msgBtnIniciarParticipante">Iniciar como Participante del fondo</string>
+    <string name="msgtxtVwBienvenido">¡Bienvenido!</string>
+    <string name="msgBtnIniciarCajero">Iniciar como Cajero del fondo</string>
+    <string name="msgTxtVwIniciarSesion">Iniciar sesión</string>
+    <string name="msgImgVwDescription">logo del fondo</string>
 </resources>
