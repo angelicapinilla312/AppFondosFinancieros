@@ -6,40 +6,105 @@
     android:layout_height="match_parent"
     tools:context=".iniciarSesionCajeroActivity">
 
-    <TextView
-        android:id="@+id/textView3"
+    <Button
+        android:id="@+id/regresarMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="¡Bienvenido!"
-        android:textColor="#3F51B5"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="52dp"
-        tools:layout_editor_absoluteY="411dp" />
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="24dp"
+        android:text="Regresar"
+        android:onClick="regresarInicio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+    <Button
+        android:id="@+id/IngresarCajero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="92dp"
+        android:text="Ingresar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="165dp"
         android:text="Iniciar sesión"
         android:textColor="#673AB7"
         android:textSize="24sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="133dp"
-        tools:layout_editor_absoluteY="369dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="348dp"
-        android:layout_height="272dp"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="71dp"
-        tools:srcCompat="@drawable/fondoEasyFund" />
+        android:layout_width="349dp"
+        android:layout_height="247dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="67dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/fondoeasyfund" />
 
-    <Button
-        android:id="@+id/regresarMenu"
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="336dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="ingresa contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/nombreCajero"
+        android:layout_width="338dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Ingrese nombre completo"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Regresar"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="629dp" />
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="237dp"
+        android:text="Nombre completo"
+        android:textColor="#3F51B5"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="8dp"
+        android:text="Contraseña"
+        android:textColor="#3F51B5"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombreCajero" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
