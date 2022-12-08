@@ -7,105 +7,138 @@
     tools:context=".iniciarSesionCajeroActivity">
 
     <Button
-        android:id="@+id/regresarMenu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="75dp"
-        android:layout_marginTop="24dp"
-        android:onClick="regresarInicio"
-        android:text="Regresar"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/btnLogin"
+        android:layout_width="206dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="#40A495"
+        android:fontFamily="@font/autour_one"
+        android:text="@string/msgBtnLogin"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/edtxPassword"
+        tools:ignore="TextContrastCheck" />
 
     <Button
-        android:id="@+id/IngresarCajero"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="92dp"
-        android:text="Ingresar"
+        android:id="@+id/btnBack"
+        android:layout_width="206dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="72dp"
+        android:backgroundTint="#B06ABC"
+        android:fontFamily="@font/autour_one"
+        android:text="@string/msgBtnBack"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/regresarMenu"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+        app:layout_constraintVertical_bias="0.981"
+        tools:ignore="TextContrastCheck" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/txtVwIniciarsesion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="165dp"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="165dp"
-        android:text="Iniciar sesión"
-        android:textColor="#673AB7"
+        android:layout_marginTop="33dp"
+        android:fontFamily="@font/autour_one"
+        android:text="@string/msgTxtVwIniciarSesion"
+        android:textColor="#A881B1"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/imgVwLogoLogin" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
-        android:layout_width="336dp"
+        android:id="@+id/edtxPassword"
+        android:layout_width="372dp"
         android:layout_height="48dp"
-        android:layout_marginTop="11dp"
-        android:ems="10"
-        android:hint="ingresa contraseña"
-        android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
-
-    <EditText
-        android:id="@+id/nombreCajero"
-        android:layout_width="338dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="Ingrese nombre completo"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="75dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="237dp"
-        android:text="Nombre completo"
-        android:textColor="#3F51B5"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
         android:layout_marginTop="8dp"
-        android:text="Contraseña"
-        android:textColor="#3F51B5"
-        android:textSize="20sp"
+        android:ems="10"
+        android:fontFamily="@font/autour_one"
+        android:gravity="start"
+        android:hint="@string/mgsEdtxPassword"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.358"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nombreCajero" />
+        app:layout_constraintTop_toBottomOf="@+id/txtVwPassword" />
+
+    <EditText
+        android:id="@+id/edtxEmailOrNickN"
+        android:layout_width="372dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:fontFamily="@font/autour_one"
+        android:gravity="start"
+        android:hint="@string/msgEdtxEmail"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.358"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVwEmailOrNickN" />
+
+    <TextView
+        android:id="@+id/txtVwEmailOrNickN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/autour_one"
+        android:text="@string/msgTxtVwEmail"
+        android:textColor="#009688"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgVwInputD" />
+
+    <TextView
+        android:id="@+id/txtVwPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/autour_one"
+        android:text="@string/msgTxtVwPassword"
+        android:textColor="#009688"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtxEmailOrNickN" />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="242dp"
-        android:layout_height="192dp"
-        android:layout_marginTop="36dp"
+        android:id="@+id/imgVwLogoLogin"
+        android:layout_width="331dp"
+        android:layout_height="196dp"
+        android:contentDescription="@string/msgImgVwDescriptionLogoLogin"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/fondoeasyfund" />
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/accounticon"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imgVwInputD"
+        android:layout_width="118dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="@string/msgImgVwLogoInputData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.921"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVwIniciarsesion"
+        app:srcCompat="@drawable/checkeicon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

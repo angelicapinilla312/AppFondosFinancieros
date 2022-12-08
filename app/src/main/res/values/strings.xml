@@ -5,4 +5,12 @@
     <string name="msgBtnIniciarCajero">Iniciar como Cajero del fondo</string>
     <string name="msgTxtVwIniciarSesion">Iniciar sesión</string>
     <string name="msgImgVwDescription">logo del fondo</string>
+    <string name="msgBtnLogin">LogIn</string>
+    <string name="msgEdtxEmail">Email or NickName</string>
+    <string name="mgsEdtxPassword">Password</string>
+    <string name="msgBtnBack">BACK</string>
+    <string name="msgTxtVwEmail">Email or NickName:</string>
+    <string name="msgTxtVwPassword">Password:</string>
+    <string name="msgImgVwDescriptionLogoLogin">loginLogo</string>
+    <string name="msgImgVwLogoInputData">logoInputDataLogin</string>
 </resources>
