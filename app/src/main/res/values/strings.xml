@@ -26,4 +26,8 @@
     <string name="text_code">0</string>
     <string name="ok_button">Ok button</string>
     <string name="msgBalance">$ 165.543.00</string>
+    <string name="msgWelcome">EasyFund te desea feliz navidad!.</string>
+    <string name="msgWelcomeMessage">Bienvenido a XFondo</string>
+    <string name="msgBtnContinuar">Continuar</string>
+    <string name="txtImgDescription">image welcome</string>
 </resources>
