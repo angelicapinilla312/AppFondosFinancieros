@@ -25,4 +25,5 @@
     <string name="text_incode">Ingresar Código de Invitación</string>
     <string name="text_code">0</string>
     <string name="ok_button">Ok button</string>
+    <string name="msgBalance">$ 165.543.00</string>
 </resources>

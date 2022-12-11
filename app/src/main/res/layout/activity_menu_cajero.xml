@@ -14,7 +14,7 @@
         android:fontFamily="@font/autour_one"
         android:orientation="horizontal"
         android:outlineProvider="bounds"
-        android:text="$ 165.543.00"
+        android:text="@string/msgBalance"
         android:textAlignment="center"
         android:textDirection="locale"
         android:textSize="34sp"

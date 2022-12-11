@@ -11,9 +11,8 @@
         android:layout_width="362dp"
         android:layout_height="70dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="292dp"
         android:layout_marginEnd="25dp"
-        android:layout_marginBottom="78dp"
         android:ellipsize="none"
         android:ems="10"
         android:fontFamily="@font/autour_one"
@@ -24,8 +23,8 @@
         android:shadowColor="#C183E1"
         android:textAlignment="center"
         android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -48,18 +47,15 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="86dp"
-        android:layout_height="63dp"
-        android:layout_marginBottom="136dp"
-        android:background="@color/purple_200"
-        android:backgroundTint="@color/purple_200"
-        android:contentDescription="@string/ok_button"
-        app:icon="@drawable/ok_okcash_icon"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="84dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="128dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="RedundantDescriptionCheck" />
+        app:srcCompat="@drawable/shield_okay" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

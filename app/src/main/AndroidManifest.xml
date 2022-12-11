@@ -47,7 +47,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".LoanApplication"
+            android:name=".LoanRequest"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <meta-data
