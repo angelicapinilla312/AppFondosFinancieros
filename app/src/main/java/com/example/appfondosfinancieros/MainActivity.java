@@ -32,4 +32,5 @@ public class MainActivity extends AppCompatActivity {
         Intent inisesCajero = new Intent(MainActivity.this,iniciarSesionCajeroActivity.class);
         startActivity(inisesCajero);
     }
+
 }

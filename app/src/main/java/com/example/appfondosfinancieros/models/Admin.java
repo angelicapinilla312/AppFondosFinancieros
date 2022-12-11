@@ -77,4 +77,17 @@ public class Admin {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    @Override
+    public String toString() {
+        return "Admin{" +
+                "name='" + name + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", identificationType='" + identificationType + '\'' +
+                ", identificationNumber=" + identificationNumber +
+                ", email='" + email + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", password='" + password + '\'' +
+                '}';
+    }
 }
