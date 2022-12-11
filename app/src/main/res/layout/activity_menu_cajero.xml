@@ -6,11 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".MenuCajero">
 
+
     <TextView
         android:id="@+id/txtVwBalance"
-        android:layout_width="381dp"
-        android:layout_height="104dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="293dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="11dp"
+        android:background="#C888D3"
         android:fontFamily="@font/autour_one"
         android:orientation="horizontal"
         android:outlineProvider="bounds"
@@ -19,41 +22,107 @@
         android:textDirection="locale"
         android:textSize="34sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtVwAdminName" />
-
-    <Button
-        android:id="@+id/btnBackHome"
-        style="@style/Widget.MaterialComponents.Button"
-        android:layout_width="233dp"
-        android:layout_height="63dp"
-        android:layout_marginTop="72dp"
-        android:background="#183D4D"
-        android:backgroundTintMode="add"
-        android:fontFamily="@font/autour_one"
-        android:text="Back"
-        android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="#2BF8BE"
-        android:textSize="34sp"
-        android:typeface="normal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtVwBalance"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/txtVwTotalFondo" />
 
     <TextView
         android:id="@+id/txtVwAdminName"
-        android:layout_width="217dp"
-        android:layout_height="26dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="140dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="79dp"
         android:text="Admin Name"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/txtSaludo" />
+
+    <TextView
+        android:id="@+id/txtVwTotalFondo"
+        android:layout_width="157dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="223dp"
+        android:text="Total del Fondo"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/txtSaludo"
+        android:layout_width="138dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="52dp"
+        android:text="Hola!"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="141dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/ic_user" />
+
+    <ImageView
+        android:id="@+id/bntParticipantes"
+        android:layout_width="145dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="37dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVwBalance"
+        tools:srcCompat="@drawable/ic_parti" />
+
+    <ImageView
+        android:id="@+id/btnPrestamos"
+        android:layout_width="142dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="59dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVwBalance"
+        tools:srcCompat="@drawable/prestamo" />
+
+    <ImageView
+        android:id="@+id/btnReglas"
+        android:layout_width="138dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bntParticipantes"
+        tools:srcCompat="@drawable/lista" />
+
+    <ImageView
+        android:id="@+id/btnSeguimiento"
+        android:layout_width="148dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="53dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPrestamos"
+        tools:srcCompat="@drawable/seguimiento" />
+
+    <ImageButton
+        android:id="@+id/btnBackToHome"
+        android:layout_width="115dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginEnd="237dp"
+        android:layout_marginBottom="86dp"
+        android:contentDescription="volverIniciarSesion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_back" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

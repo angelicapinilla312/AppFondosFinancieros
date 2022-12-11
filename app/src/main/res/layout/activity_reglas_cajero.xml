@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReglasCajero">
+
+    <ImageButton
+        android:id="@+id/btnBackMenuCajeroReglas"
+        android:layout_width="142dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="59dp"
+        android:contentDescription="volverIniciarSesion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="regresarMenuReglas"
+        app:srcCompat="@drawable/ic_back" />
+
+    <TextView
+        android:id="@+id/txtListaReglas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp"
+        android:text="Lista Reglas"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="560dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtListaReglas">
+
+        <TextView
+            android:id="@+id/txtBaseAhorro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Base de Ahorro"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etxtBaseAhorro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Escribe la cantidad de base de ahorro"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/txtMontoPrestamo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Máximo monto de prestamo"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/eTxtMontoPrestamo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Escribe la cantidad máxima de prestamo"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/txtTasaInteres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tasa de Interes"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etxtTasaInteres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Escribe la tasa de interes"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/txtMaximoCntCuotas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Máxima cantidad de cuotas"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etxtMaximoCntCuotas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Escribe la cantidad máxima de cuotas"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

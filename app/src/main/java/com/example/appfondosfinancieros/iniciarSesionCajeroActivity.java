@@ -49,7 +49,6 @@ public class iniciarSesionCajeroActivity extends AppCompatActivity {
         Toast.makeText(this,"Ingreso satisfactorio", Toast.LENGTH_SHORT).show();
         Intent homeFund = new Intent(iniciarSesionCajeroActivity.this,MenuCajero.class);
 
-            System.out.println(email);
         homeFund.putExtra("AdminName",email);
         startActivity(homeFund);
 
