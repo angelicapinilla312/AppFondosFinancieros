@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuCajero">
+
+    <TextView
+        android:id="@+id/txtVwBalance"
+        android:layout_width="381dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/autour_one"
+        android:orientation="horizontal"
+        android:outlineProvider="bounds"
+        android:text="$ 165.543.00"
+        android:textAlignment="center"
+        android:textDirection="locale"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVwAdminName" />
+
+    <Button
+        android:id="@+id/btnBackHome"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="233dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="72dp"
+        android:background="#183D4D"
+        android:backgroundTintMode="add"
+        android:fontFamily="@font/autour_one"
+        android:text="Back"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#2BF8BE"
+        android:textSize="34sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVwBalance"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtVwAdminName"
+        android:layout_width="217dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="16dp"
+        android:text="Admin Name"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
