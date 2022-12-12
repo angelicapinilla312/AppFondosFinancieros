@@ -15,12 +15,31 @@
             android:name=".Contribution"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.NoActionBar">
+        <meta-data
+            android:name="android.app.lib_name"
+            android:value="" />
+         </activity>
+
+        <activity
+            android:name=".SeguimientoCajero"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
+
             android:name=".Configuration"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+        <meta-data
+            android:name="android.app.lib_name"
+            android:value="" />
+        </activity>
+
+        <activity
+            android:name=".PrestamosCajero"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <meta-data
@@ -31,6 +50,23 @@
             android:name=".HomeParticipant"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.NoActionBar">
+        <meta-data
+            android:name="android.app.lib_name"
+            android:value="" />
+        </activity>
+
+        <activity
+            android:name=".AdminParticipantes"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ParticipantesCajero"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -39,6 +75,7 @@
             android:name=".MenuCajero"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.NoActionBar">
+
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -47,6 +84,7 @@
             android:name=".PayFee"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.NoActionBar">
+
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
