@@ -18,4 +18,5 @@ public class PrestamosCajero extends AppCompatActivity {
         Intent back = new Intent(PrestamosCajero.this,MenuCajero.class);
         startActivity(back);
     }
+
 }

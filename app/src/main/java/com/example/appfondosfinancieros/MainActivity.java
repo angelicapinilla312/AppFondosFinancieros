@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         btnIniciarCajero = findViewById(R.id.btnIniciarCajero);
-        btnIniciarParticipante = findViewById(R.id.btnIniciarParticipante);
+        btnIniciarParticipante = findViewById(R.id.btnPrestar);
 
         btnIniciarCajero.setOnClickListener(new View.OnClickListener() {
             @Override

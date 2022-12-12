@@ -40,4 +40,23 @@ public class MenuCajero extends AppCompatActivity {
         startActivity(home);
     }
 
+    public void HomeToParti(View view){
+        Intent home = new Intent(MenuCajero.this,ParticipantesCajero.class);
+        startActivity(home);
+    }
+
+    public void HomeToPrestamo(View view){
+        Intent home = new Intent(MenuCajero.this,PrestamosCajero.class);
+        startActivity(home);
+    }
+
+    public void HomeToReglas(View view){
+        Intent home = new Intent(MenuCajero.this,ReglasCajero.class);
+        startActivity(home);
+    }
+
+    public void HomeToSeguimiento(View view){
+        Intent home = new Intent(MenuCajero.this,SeguimientoCajero.class);
+        startActivity(home);
+    }
 }

@@ -15,7 +15,7 @@ public class ReglasCajero extends AppCompatActivity {
     }
 
     public void regresarMenuReglas(View view){
-        Intent back = new Intent(ReglasCajero.this,MenuCajero.class);
-        startActivity(back);
+        Intent backm = new Intent(ReglasCajero.this,MenuCajero.class);
+        startActivity(backm);
     }
 }

@@ -6,16 +6,68 @@
     android:layout_height="match_parent"
     tools:context=".SeguimientoCajero">
 
+    <TextView
+        android:id="@+id/txtHistorico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="151dp"
+        android:text="Historico Aportes"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/txtHistorico2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="151dp"
+        android:text="Historico Prestamos"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lvAportes" />
+
     <ImageButton
         android:id="@+id/btnBackMenuCajeroHistorico"
         android:layout_width="142dp"
         android:layout_height="56dp"
         android:layout_marginStart="32dp"
+        android:layout_marginEnd="237dp"
         android:layout_marginBottom="59dp"
         android:contentDescription="volverIniciarSesion"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         android:onClick="regresarMenuHistorico"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/ic_back" />
+
+    <ListView
+        android:id="@+id/lvAportes"
+        android:layout_width="404dp"
+        android:layout_height="278dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtHistorico" />
+
+    <ListView
+        android:id="@+id/lvPrestamos"
+        android:layout_width="407dp"
+        android:layout_height="292dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtHistorico2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
