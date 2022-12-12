@@ -47,7 +47,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imgVwLoanRequest"
         android:layout_width="108dp"
         android:layout_height="109dp"
         android:layout_marginTop="60dp"
@@ -71,7 +71,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.527"
         app:layout_constraintStart_toEndOf="@+id/textView7"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintTop_toBottomOf="@+id/imgVwLoanRequest" />
 
     <TextView
         android:id="@+id/textView7"
@@ -85,7 +85,7 @@
         android:textColor="#FFFFFF"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintTop_toBottomOf="@+id/imgVwContribution" />
 
     <TextView
         android:id="@+id/textView8"
@@ -101,7 +101,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.686"
         app:layout_constraintStart_toEndOf="@+id/textView9"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imgVwPayFee"
         app:layout_constraintVertical_bias="0.086" />
 
     <TextView
@@ -117,23 +117,23 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/imgVwConfiguration"
         app:layout_constraintVertical_bias="0.021" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/imgVwContribution"
         android:layout_width="119dp"
         android:layout_height="112dp"
         android:layout_marginTop="60dp"
         android:layout_marginEnd="96dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintEnd_toStartOf="@+id/imgVwLoanRequest"
         app:layout_constraintHorizontal_bias="0.955"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:srcCompat="@drawable/paymenticon" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/imgVwPayFee"
         android:layout_width="104dp"
         android:layout_height="99dp"
         android:layout_marginTop="60dp"
@@ -143,13 +143,13 @@
         app:srcCompat="@drawable/loanfeeicon" />
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/imgVwConfiguration"
         android:layout_width="107dp"
         android:layout_height="101dp"
         android:layout_marginStart="48dp"
         android:layout_marginTop="56dp"
         android:src="@drawable/settings"
-        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintEnd_toStartOf="@+id/imgVwPayFee"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />

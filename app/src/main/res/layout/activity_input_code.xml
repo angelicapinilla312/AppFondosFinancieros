@@ -11,7 +11,7 @@
         android:layout_width="362dp"
         android:layout_height="70dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="292dp"
+        android:layout_marginTop="204dp"
         android:layout_marginEnd="25dp"
         android:ellipsize="none"
         android:ems="10"
@@ -51,11 +51,33 @@
         android:id="@+id/imgVwCodeOkay"
         android:layout_width="84dp"
         android:layout_height="85dp"
-        android:layout_marginBottom="128dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="68dp"
+        android:layout_marginBottom="61dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtxCode"
         app:srcCompat="@drawable/shield_okay" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="410dp"
+        android:layout_height="239dp"
+        android:layout_marginBottom="4dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/lineaslogin" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/lineacool"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-63dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

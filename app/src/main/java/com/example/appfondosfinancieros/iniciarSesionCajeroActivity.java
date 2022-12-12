@@ -13,7 +13,7 @@ public class iniciarSesionCajeroActivity extends AppCompatActivity {
 
     Button btnLogin, btnBack;
     EditText edtxEmail, edtxPassword;
-    String passwordCorrecta = "adminPro22";
+    final String  adminEmailOrNickName = "juan.castellanosj";
 
 
     @Override
@@ -45,14 +45,13 @@ public class iniciarSesionCajeroActivity extends AppCompatActivity {
         String email = edtxEmail.getText().toString();
         String password = edtxPassword.getText().toString();
 
-        if(password.equals(passwordCorrecta)){
-        Toast.makeText(this,"Ingreso satisfactorio", Toast.LENGTH_SHORT).show();
-        Intent homeFund = new Intent(iniciarSesionCajeroActivity.this,MenuCajero.class);
-
-            System.out.println(email);
-        homeFund.putExtra("AdminName",email);
-        startActivity(homeFund);
-
+        if(email.equals(adminEmailOrNickName)) {
+        Intent homeAdmin = new Intent(iniciarSesionCajeroActivity.this,MenuCajero.class);
+        homeAdmin.putExtra("AdminName",email);
+        startActivity(homeAdmin);
+        }else{
+            Intent inputCode = new Intent(iniciarSesionCajeroActivity.this,InputCode.class);
+            startActivity(inputCode);
         }
     }
 

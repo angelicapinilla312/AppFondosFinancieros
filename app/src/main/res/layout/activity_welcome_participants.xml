@@ -52,13 +52,25 @@
         style="@style/Widget.AppCompat.Button"
         android:layout_width="233dp"
         android:layout_height="48dp"
-        android:layout_marginTop="128dp"
+        android:layout_marginTop="84dp"
         android:backgroundTint="#B06ABC"
         android:text="@string/msgBtnContinuar"
         app:cornerRadius="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.151" />
+        tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="413dp"
+        android:layout_height="193dp"
+        android:layout_marginTop="31dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnWelcome"
+        app:srcCompat="@drawable/lineaslogin" />
 </androidx.constraintlayout.widget.ConstraintLayout>

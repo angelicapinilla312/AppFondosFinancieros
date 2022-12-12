@@ -13,7 +13,7 @@ public class InputCode extends AppCompatActivity {
     ImageView imgVwOkayCode;
     EditText edtxCode;
 
-    final String CODE = "xdrs-2231-rtf";
+    final String CODE = "0000";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +32,7 @@ public class InputCode extends AppCompatActivity {
     }
 
     public void validarCodigo(){
-        if(edtxCode.getText().toString() == CODE){
+        if(edtxCode.getText().toString().equals(CODE)){
             Intent welcomeParticipants = new Intent(InputCode.this,WelcomeParticipants.class);
             startActivity(welcomeParticipants);
         }
