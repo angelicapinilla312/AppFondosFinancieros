@@ -80,7 +80,7 @@
         android:layout_marginTop="37dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtVwBalance"
-        tools:srcCompat="@drawable/ic_parti" />
+        app:srcCompat="@drawable/ic_parti" />
 
     <ImageView
         android:id="@+id/btnPrestamos"
@@ -90,7 +90,7 @@
         android:layout_marginEnd="59dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtVwBalance"
-        tools:srcCompat="@drawable/prestamo" />
+        app:srcCompat="@drawable/prestamo" />
 
     <ImageView
         android:id="@+id/btnReglas"
@@ -100,7 +100,7 @@
         android:layout_marginTop="32dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bntParticipantes"
-        tools:srcCompat="@drawable/lista" />
+        app:srcCompat="@drawable/lista" />
 
     <ImageView
         android:id="@+id/btnSeguimiento"
@@ -110,7 +110,7 @@
         android:layout_marginEnd="53dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnPrestamos"
-        tools:srcCompat="@drawable/seguimiento" />
+        app:srcCompat="@drawable/seguimiento" />
 
     <ImageButton
         android:id="@+id/btnBackToHome"
