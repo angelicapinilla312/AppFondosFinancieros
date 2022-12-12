@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">AppFondosFinancieros</string>
-<<<<<<< HEAD
+
     <string name="msgBtnIniciarParticipante">Iniciar como Participante del fondo</string>
     <string name="msgtxtVwBienvenido">¡Bienvenido!</string>
     <string name="msgBtnIniciarCajero">Iniciar como Cajero del fondo</string>
@@ -14,7 +14,7 @@
     <string name="msgTxtVwPassword">Password:</string>
     <string name="msgImgVwDescriptionLogoLogin">loginLogo</string>
     <string name="msgImgVwLogoInputData">logoInputDataLogin</string>
-=======
+
     <string name="title_activity_input_code">InputCode</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
@@ -27,5 +27,5 @@
     <string name="text_incode">Ingresar Código de Invitación</string>
     <string name="text_code">0</string>
     <string name="ok_button">Ok button</string>
->>>>>>> 00461fa (Problema solucionado!)
+
 </resources>
