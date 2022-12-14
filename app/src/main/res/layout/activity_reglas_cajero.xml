@@ -6,36 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".ReglasCajero">
 
-    <ImageButton
-        android:id="@+id/btnBackMenuCajeroReglas"
-        android:layout_width="142dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="237dp"
-        android:layout_marginBottom="59dp"
-        android:contentDescription="volverIniciarSesion"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/saveReglas"
-        app:layout_constraintVertical_bias="0.8"
-        app:srcCompat="@drawable/ic_back" />
-
-    <ImageButton
-        android:id="@+id/saveReglas"
-        android:layout_width="142dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="134dp"
-        android:layout_marginTop="31dp"
-        android:layout_marginEnd="135dp"
-        android:contentDescription="save"
-        android:onClick="regresarMenuReglas"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:srcCompat="@drawable/ic_save" />
-
     <TextView
         android:id="@+id/txtListaReglas"
         android:layout_width="wrap_content"
@@ -165,15 +135,37 @@
                 android:textAlignment="center"
                 android:textSize="20sp" />
 
-            <ImageButton
-                android:id="@+id/btnShare"
-                android:layout_width="84dp"
-                android:layout_height="48dp"
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:contentDescription="shareSuscription"
                 app:srcCompat="@drawable/ic_share" />
+
         </LinearLayout>
 
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.066"
+        app:srcCompat="@drawable/ic_save" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="69dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_back" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
