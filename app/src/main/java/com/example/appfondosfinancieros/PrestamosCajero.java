@@ -15,8 +15,8 @@ public class PrestamosCajero extends AppCompatActivity {
     }
 
     public void regresarMenuPrestamos(View view){
-        Intent back = new Intent(PrestamosCajero.this,MenuCajero.class);
-        startActivity(back);
+        Intent backpr = new Intent(PrestamosCajero.this,MenuCajero.class);
+        startActivity(backpr);
     }
 
 }

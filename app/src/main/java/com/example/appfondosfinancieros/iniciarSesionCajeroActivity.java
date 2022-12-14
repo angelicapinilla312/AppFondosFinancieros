@@ -13,7 +13,7 @@ public class iniciarSesionCajeroActivity extends AppCompatActivity {
 
     Button btnLogin, btnBack;
     EditText edtxEmail, edtxPassword;
-    String passwordCorrecta = "adminPro22";
+    String passwordCorrecta = "as";
 
 
     @Override

@@ -47,11 +47,12 @@
         android:layout_height="56dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="237dp"
-        android:layout_marginBottom="59dp"
-        android:contentDescription="volverIniciarSesion"
+        android:layout_marginBottom="88dp"
+        android:contentDescription="volverIniciarSesionPrestamos"
         android:onClick="regresarMenuPrestamos"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/ic_back" />
 
@@ -70,8 +71,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="363dp"
-        android:layout_height="388dp"
+        android:layout_width="357dp"
+        android:layout_height="323dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="34dp"
         android:layout_marginEnd="24dp"

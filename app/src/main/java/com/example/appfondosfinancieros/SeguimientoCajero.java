@@ -15,7 +15,7 @@ public class SeguimientoCajero extends AppCompatActivity {
     }
 
     public void regresarMenuHistorico(View view){
-        Intent back = new Intent(SeguimientoCajero.this,MenuCajero.class);
-        startActivity(back);
+        Intent backh = new Intent(SeguimientoCajero.this,MenuCajero.class);
+        startActivity(backh);
     }
 }
