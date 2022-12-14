@@ -1,5 +1,20 @@
 <resources>
     <string name="app_name">AppFondosFinancieros</string>
+
+    <string name="msgBtnIniciarParticipante">Iniciar como Participante del fondo</string>
+    <string name="msgtxtVwBienvenido">¡Bienvenido!</string>
+    <string name="msgBtnIniciarCajero">Iniciar como Cajero del fondo</string>
+    <string name="msgTxtVwIniciarSesion">Iniciar sesión</string>
+    <string name="msgImgVwDescription">logo del fondo</string>
+    <string name="msgBtnLogin">LogIn</string>
+    <string name="msgEdtxEmail">Email or NickName</string>
+    <string name="mgsEdtxPassword">Password</string>
+    <string name="msgBtnBack">BACK</string>
+    <string name="msgTxtVwEmail">Email or NickName:</string>
+    <string name="msgTxtVwPassword">Password:</string>
+    <string name="msgImgVwDescriptionLogoLogin">loginLogo</string>
+    <string name="msgImgVwLogoInputData">logoInputDataLogin</string>
+
     <string name="title_activity_input_code">InputCode</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
@@ -12,4 +27,10 @@
     <string name="text_incode">Ingresar Código de Invitación</string>
     <string name="text_code">0</string>
     <string name="ok_button">Ok button</string>
+
+    <string name="msgBalance">$ 165.543.00</string>
+    <string name="msgWelcome">EasyFund te desea feliz navidad!.</string>
+    <string name="msgWelcomeMessage">Bienvenido a XFondo</string>
+    <string name="msgBtnContinuar">Continuar</string>
+    <string name="txtImgDescription">image welcome</string>
 </resources>

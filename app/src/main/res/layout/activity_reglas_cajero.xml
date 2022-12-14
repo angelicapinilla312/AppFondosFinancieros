@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReglasCajero">
+
+    <ImageButton
+        android:id="@+id/btnBackMenuCajeroReglas"
+        android:layout_width="142dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="237dp"
+        android:layout_marginBottom="59dp"
+        android:contentDescription="volverIniciarSesion"
+        android:onClick="regresarMenuReglas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_back" />
+
+    <ImageButton
+        android:id="@+id/saveReglas"
+        android:layout_width="142dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="134dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="135dp"
+        android:contentDescription="save"
+        android:onClick="regresarMenuReglas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:srcCompat="@drawable/ic_save" />
+
+    <TextView
+        android:id="@+id/txtListaReglas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="151dp"
+        android:text="Lista Reglas"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="343dp"
+        android:layout_height="468dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="37dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtListaReglas">
+
+        <TextView
+            android:id="@+id/txtNombreFondo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre del Fondo de Ahorro"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etxtBaseAhorro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Escribe el nombre del fondo de ahorro"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:id="@+id/txtBaseAhorro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Base de Ahorro"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Escribe la cantidad de base de ahorro"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:id="@+id/txtMontoPrestamo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Máximo monto de prestamo"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/eTxtMontoPrestamo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Escribe la cantidad máxima de prestamo"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:id="@+id/txtTasaInteres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tasa de Interes"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etxtTasaInteres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Escribe la tasa de interes"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:id="@+id/txtMaximoCntCuotas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Máxima cantidad de cuotas"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etxtMaximoCntCuotas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Escribe la cantidad máxima de cuotas"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:id="@+id/txtEtiquetaCodigo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Código de Suscripción"
+            android:textSize="18sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtCodigoSuscripcion"
+                android:layout_width="257dp"
+                android:layout_height="43dp"
+                android:background="#A36DAC"
+                android:gravity="center"
+                android:text="FXSDF1L"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/btnShare"
+                android:layout_width="84dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:contentDescription="shareSuscription"
+                app:srcCompat="@drawable/ic_share" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

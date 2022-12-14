@@ -6,28 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".InputCode">
 
-    <EditText
-        android:id="@+id/editTextNumber"
-        android:layout_width="362dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="25dp"
-        android:layout_marginBottom="78dp"
-        android:ellipsize="none"
-        android:ems="10"
-        android:fontFamily="@font/autour_one"
-        android:hint="@string/text_code"
-        android:importantForAutofill="no"
-        android:inputType="number"
-        android:outlineProvider="none"
-        android:shadowColor="#C183E1"
-        android:textAlignment="center"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        <EditText
+            android:id="@+id/edtxCode"
+            android:layout_width="362dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="204dp"
+            android:layout_marginEnd="25dp"
+            android:ellipsize="none"
+            android:ems="10"
+            android:fontFamily="@font/autour_one"
+            android:hint="@string/text_code"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:outlineProvider="none"
+            android:shadowColor="#C183E1"
+            android:textAlignment="center"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
         android:id="@+id/textView"
@@ -41,25 +40,46 @@
         android:text="@string/text_incode"
         android:textAlignment="center"
         android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextNumber"
+        app:layout_constraintBottom_toTopOf="@+id/edtxCode"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="86dp"
-        android:layout_height="63dp"
-        android:layout_marginBottom="136dp"
-        android:background="@color/purple_200"
-        android:backgroundTint="@color/purple_200"
-        android:contentDescription="@string/ok_button"
-        app:icon="@drawable/ok_okcash_icon"
-        app:layout_constraintBottom_toBottomOf="parent"
+
+    <ImageView
+        android:id="@+id/imgVwCodeOkay"
+        android:layout_width="84dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginBottom="61dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="RedundantDescriptionCheck" />
+        app:layout_constraintTop_toBottomOf="@+id/edtxCode"
+        app:srcCompat="@drawable/shield_okay" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="410dp"
+        android:layout_height="239dp"
+        android:layout_marginBottom="4dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/lineaslogin" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/edtxCode"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/lineacool" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

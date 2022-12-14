@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "179825646310",
+    "firebase_url": "https://easyfund-col22-default-rtdb.firebaseio.com",
+    "project_id": "easyfund-col22",
+    "storage_bucket": "easyfund-col22.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:179825646310:android:628ade1acc0e5c1352b927",
+        "android_client_info": {
+          "package_name": "com.example.appfondosfinancieros"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "179825646310-hhbb8fadjlmbakhe28hv36tosauce508.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSASRu1vUs9nRR0UXFzZKSC3HU1NdSAZc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "179825646310-hhbb8fadjlmbakhe28hv36tosauce508.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
