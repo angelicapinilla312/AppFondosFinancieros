@@ -1,8 +1,9 @@
-package com.example.appfondosfinancieros.models;
+package com.example.appfondosfinancieros.data.models;
 
 import java.io.Serializable;
 
 public class Participant implements Serializable {
+
     private String name;
     private String lastName;
     private String identificationType;
@@ -14,7 +15,9 @@ public class Participant implements Serializable {
     public Participant() {
     }
 
-    public Participant(String name, String lastName, String identificationType, int identificationNumber, String email, String phoneNumber, String password) {
+    public Participant(String name, String lastName, String identificationType,
+                       int identificationNumber, String email, String phoneNumber,
+                       String password) {
         this.name = name;
         this.lastName = lastName;
         this.identificationType = identificationType;
