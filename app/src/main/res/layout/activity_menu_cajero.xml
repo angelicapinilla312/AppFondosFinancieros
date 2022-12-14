@@ -71,55 +71,7 @@
         android:layout_marginTop="52dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/ic_user" />
-
-    <ImageView
-        android:id="@+id/bntParticipantes"
-        android:layout_width="145dp"
-        android:layout_height="114dp"
-        android:layout_marginStart="47dp"
-        android:layout_marginTop="37dp"
-        android:contentDescription="partiTomenu"
-        android:onClick="HomeToParti"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtVwBalance"
-        app:srcCompat="@drawable/ic_parti" />
-
-    <ImageView
-        android:id="@+id/btnPrestamos"
-        android:layout_width="142dp"
-        android:layout_height="119dp"
-        android:layout_marginTop="37dp"
-        android:layout_marginEnd="59dp"
-        android:contentDescription="prestamoToMenu"
-        android:onClick="HomeToPrestamo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtVwBalance"
-        app:srcCompat="@drawable/prestamo" />
-
-    <ImageView
-        android:id="@+id/btnReglas"
-        android:layout_width="138dp"
-        android:layout_height="123dp"
-        android:layout_marginStart="51dp"
-        android:layout_marginTop="32dp"
-        android:contentDescription="reglasToHome"
-        android:onClick="HomeToReglas"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bntParticipantes"
-        app:srcCompat="@drawable/lista" />
-
-    <ImageView
-        android:id="@+id/btnSeguimiento"
-        android:layout_width="148dp"
-        android:layout_height="124dp"
-        android:layout_marginTop="27dp"
-        android:layout_marginEnd="53dp"
-        android:contentDescription="historicoToMenu"
-        android:onClick="HomeToSeguimiento"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnPrestamos"
-        app:srcCompat="@drawable/seguimiento" />
+        app:srcCompat="@drawable/ic_user" />
 
     <ImageButton
         android:id="@+id/btnBackToHome"
@@ -133,5 +85,63 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/ic_back" />
+
+    <ImageButton
+        android:id="@+id/btnParticipantes"
+        android:layout_width="128dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="30dp"
+        android:contentDescription="menuparti"
+        android:onClick="HomeToParti"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toStartOf="@+id/bntPrestamos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVwBalance"
+        app:srcCompat="@drawable/ic_parti" />
+
+    <ImageButton
+        android:id="@+id/bntPrestamos"
+        android:layout_width="126dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="72dp"
+        android:contentDescription="menuprestamos"
+        android:onClick="HomeToPrestamo"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVwBalance"
+        app:srcCompat="@drawable/prestamo" />
+
+    <ImageButton
+        android:id="@+id/btnReglas"
+        android:layout_width="134dp"
+        android:layout_height="127dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="93dp"
+        android:contentDescription="menuLista"
+        android:onClick="HomeToReglas"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/btnBackToHome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnParticipantes"
+        app:srcCompat="@drawable/lista" />
+
+    <ImageButton
+        android:id="@+id/btnSeguimiento"
+        android:layout_width="128dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginBottom="259dp"
+        android:contentDescription="menuSeguimiento"
+        android:onClick="HomeToSeguimiento"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bntPrestamos"
+        app:srcCompat="@drawable/seguimiento" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

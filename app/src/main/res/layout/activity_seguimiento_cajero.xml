@@ -40,11 +40,12 @@
         android:layout_height="56dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="237dp"
-        android:layout_marginBottom="59dp"
-        android:contentDescription="volverIniciarSesion"
+        android:layout_marginBottom="108dp"
+        android:contentDescription="volverIniciarSesionHistorico"
         android:onClick="regresarMenuHistorico"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/ic_back" />
 
@@ -61,8 +62,8 @@
 
     <ListView
         android:id="@+id/lvPrestamos"
-        android:layout_width="407dp"
-        android:layout_height="292dp"
+        android:layout_width="409dp"
+        android:layout_height="239dp"
         android:layout_marginStart="1dp"
         android:layout_marginTop="14dp"
         android:layout_marginEnd="3dp"

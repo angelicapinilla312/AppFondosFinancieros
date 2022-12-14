@@ -11,7 +11,6 @@ import android.widget.TextView;
 
 public class MenuCajero extends AppCompatActivity {
 
-    ImageButton btnBackToHome;
     TextView txtVwAdminNickName, txtVwBalance;
 
     @Override
@@ -19,44 +18,35 @@ public class MenuCajero extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_cajero);
 
-        btnBackToHome = findViewById(R.id.btnBackToHome);
         txtVwAdminNickName = findViewById(R.id.txtVwAdminName);
         txtVwBalance = findViewById(R.id.txtVwBalance);
         String name = String.valueOf(getIntent().getExtras().getString("AdminName"));
         txtVwAdminNickName.setText(name);
-
-
-        btnBackToHome.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                backToHome(v);
-            }
-        });
-
     }
 
+
     public void backToHome(View view){
-        Intent home = new Intent(MenuCajero.this,MainActivity.class);
-        startActivity(home);
+        Intent inisesCajeroa = new Intent(MenuCajero.this,iniciarSesionCajeroActivity.class);
+        startActivity(inisesCajeroa);
     }
 
     public void HomeToParti(View view){
-        Intent home = new Intent(MenuCajero.this,ParticipantesCajero.class);
-        startActivity(home);
-    }
-
-    public void HomeToPrestamo(View view){
-        Intent home = new Intent(MenuCajero.this,PrestamosCajero.class);
-        startActivity(home);
+        Intent inisesCajerob = new Intent(MenuCajero.this,ParticipantesCajero.class);
+        startActivity(inisesCajerob);
     }
 
     public void HomeToReglas(View view){
-        Intent home = new Intent(MenuCajero.this,ReglasCajero.class);
-        startActivity(home);
+        Intent inisesCajeroc = new Intent(MenuCajero.this,ReglasCajero.class);
+        startActivity(inisesCajeroc);
+    }
+
+    public void HomeToPrestamo(View view){
+        Intent inisesCajerod = new Intent(MenuCajero.this,PrestamosCajero.class);
+        startActivity(inisesCajerod);
     }
 
     public void HomeToSeguimiento(View view){
-        Intent home = new Intent(MenuCajero.this,SeguimientoCajero.class);
-        startActivity(home);
+        Intent inisesCajeroe = new Intent(MenuCajero.this,SeguimientoCajero.class);
+        startActivity(inisesCajeroe);
     }
 }
