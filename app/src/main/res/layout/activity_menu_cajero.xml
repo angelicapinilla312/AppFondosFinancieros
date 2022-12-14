@@ -11,7 +11,6 @@
         android:id="@+id/txtVwBalance"
         android:layout_width="293dp"
         android:layout_height="75dp"
-        android:layout_marginStart="59dp"
         android:layout_marginTop="11dp"
         android:background="#C888D3"
         android:fontFamily="@font/autour_one"
@@ -23,6 +22,7 @@
         android:textDirection="locale"
         android:textSize="34sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtVwTotalFondo" />
 
@@ -60,6 +60,8 @@
         android:layout_marginTop="52dp"
         android:text="Hola!"
         android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -67,8 +69,9 @@
         android:id="@+id/imageView2"
         android:layout_width="141dp"
         android:layout_height="75dp"
-        android:layout_marginStart="31dp"
         android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.114"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@drawable/ic_user" />
@@ -79,8 +82,9 @@
         android:layout_height="114dp"
         android:layout_marginStart="47dp"
         android:layout_marginTop="37dp"
+        android:layout_marginEnd="18dp"
         android:contentDescription="partiTomenu"
-        android:onClick="HomeToParti"
+        app:layout_constraintEnd_toStartOf="@+id/btnPrestamos"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtVwBalance"
         app:srcCompat="@drawable/ic_parti" />
@@ -92,7 +96,6 @@
         android:layout_marginTop="37dp"
         android:layout_marginEnd="59dp"
         android:contentDescription="prestamoToMenu"
-        android:onClick="HomeToPrestamo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtVwBalance"
         app:srcCompat="@drawable/prestamo" />
@@ -104,9 +107,12 @@
         android:layout_marginStart="51dp"
         android:layout_marginTop="32dp"
         android:contentDescription="reglasToHome"
-        android:onClick="HomeToReglas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnSeguimiento"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bntParticipantes"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/lista" />
 
     <ImageView
@@ -114,24 +120,25 @@
         android:layout_width="148dp"
         android:layout_height="124dp"
         android:layout_marginTop="27dp"
-        android:layout_marginEnd="53dp"
+        android:layout_marginEnd="56dp"
         android:contentDescription="historicoToMenu"
-        android:onClick="HomeToSeguimiento"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnPrestamos"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/seguimiento" />
 
-    <ImageButton
-        android:id="@+id/btnBackToHome"
-        android:layout_width="115dp"
-        android:layout_height="75dp"
-        android:layout_marginStart="59dp"
-        android:layout_marginEnd="237dp"
-        android:layout_marginBottom="86dp"
-        android:contentDescription="volverIniciarSesion"
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="85dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="96dp"
+        android:background="#0F3135"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSeguimiento"
+        app:layout_constraintVertical_bias="0.04"
         app:srcCompat="@drawable/ic_back" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
