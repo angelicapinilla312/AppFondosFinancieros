@@ -73,7 +73,7 @@
         app:layout_constraintHorizontal_bias="0.114"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/ic_user" />
+        app:srcCompat="@drawable/ic_user" />
 
     <ImageView
         android:id="@+id/btnParticipantes"
@@ -126,5 +126,17 @@
         app:layout_constraintTop_toBottomOf="@+id/btnPrestamos"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/seguimiento" />
+
+    <ImageView
+        android:id="@+id/btnBackToHome"
+        android:layout_width="103dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="154dp"
+        android:layout_marginEnd="154dp"
+        android:layout_marginBottom="84dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_back" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
