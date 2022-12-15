@@ -6,4 +6,95 @@
     android:layout_height="match_parent"
     tools:context=".PayFee">
 
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/autour_one"
+        android:text="Pay Fee"
+        android:textSize="31sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="94dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="76dp"
+        android:fontFamily="@font/autour_one"
+        android:text="Date:"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="184dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="108dp"
+        android:fontFamily="@font/autour_one"
+        android:text="Amount Fee:"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="184dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/autour_one"
+        android:text="$ 245.000.00"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="184dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="76dp"
+        android:fontFamily="@font/autour_one"
+        android:text="24/08/2023"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView27"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+    <Button
+        android:id="@+id/btnPayFee"
+        android:layout_width="183dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="112dp"
+        android:backgroundTint="#009688"
+        android:text="Pay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+    <Button
+        android:id="@+id/btnRegresarPayFeeHome"
+        android:layout_width="183dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#F44336"
+        android:text="Regresar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPayFee"
+        app:layout_constraintVertical_bias="0.147" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

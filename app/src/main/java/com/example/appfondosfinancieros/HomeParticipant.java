@@ -52,7 +52,7 @@ public class HomeParticipant extends AppCompatActivity {
         startActivity(payFee);
     }
     public void goToLoanRequest(){
-        Intent loanRequest = new Intent(HomeParticipant.this,LoanRequest.class);
+        Intent loanRequest = new Intent(HomeParticipant.this,LoanApplication.class);
         startActivity(loanRequest);
     }
     public void goToConfiguration(){
