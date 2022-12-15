@@ -5,25 +5,39 @@ import java.util.Date;
 
 public class Participant implements Serializable {
 
+    private String document;
     private String name;
     private String lastName;
-    private String document;
     private String docType;
     private Date birthDate;
     private String phoneNumber;
     private String urlImage;
+    private int userId;
+    private String fundCode;
 
     public Participant() {
     }
 
-    public Participant(String name, String lastName, String document, String docType, Date birthDate, String phoneNumber, String urlImage) {
+    public Participant(String document, String name, String lastName,
+                       String docType, Date birthDate, String phoneNumber,
+                       String urlImage, int userId, String fundCode) {
+        this.document = document;
         this.name = name;
         this.lastName = lastName;
-        this.document = document;
         this.docType = docType;
         this.birthDate = birthDate;
         this.phoneNumber = phoneNumber;
         this.urlImage = urlImage;
+        this.userId = userId;
+        this.fundCode = fundCode;
+    }
+
+    public String getDocument() {
+        return document;
+    }
+
+    public void setDocument(String document) {
+        this.document = document;
     }
 
     public String getName() {
@@ -40,14 +54,6 @@ public class Participant implements Serializable {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
-    }
-
-    public String getDocument() {
-        return document;
-    }
-
-    public void setDocument(String document) {
-        this.document = document;
     }
 
     public String getDocType() {
@@ -82,16 +88,34 @@ public class Participant implements Serializable {
         this.urlImage = urlImage;
     }
 
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
+
+    public String getFundCode() {
+        return fundCode;
+    }
+
+    public void setFundCode(String fundCode) {
+        this.fundCode = fundCode;
+    }
+
     @Override
     public String toString() {
         return "Participant{" +
-                "name='" + name + '\'' +
+                "document='" + document + '\'' +
+                ", name='" + name + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", document='" + document + '\'' +
                 ", docType='" + docType + '\'' +
                 ", birthDate=" + birthDate +
                 ", phoneNumber='" + phoneNumber + '\'' +
                 ", urlImage='" + urlImage + '\'' +
+                ", userId=" + userId +
+                ", fundCode='" + fundCode + '\'' +
                 '}';
     }
 }

@@ -7,21 +7,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-
 public class ReglasCajero extends AppCompatActivity {
 
-<<<<<<< HEAD
-=======
     ImageView btnGuardarReglas, btnBackReglasHome;
->>>>>>> data_and_backend
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reglas_cajero);
 
-<<<<<<< HEAD
-=======
         btnBackReglasHome = findViewById(R.id.btnBackReglasHome);
         btnGuardarReglas = findViewById(R.id.btnGuardarReglas);
 
@@ -31,9 +25,8 @@ public class ReglasCajero extends AppCompatActivity {
                 regresarMenuReglas(v);
             }
         });
->>>>>>> data_and_backend
-    }
 
+    }
 
     public void regresarMenuReglas(View view){
         Intent backr = new Intent(ReglasCajero.this,MenuCajero.class);
