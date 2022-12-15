@@ -10,7 +10,7 @@ import android.widget.ImageView;
 
 public class InputCode extends AppCompatActivity {
 
-    ImageView imgVwOkayCode;
+    ImageView imgVwOkayCode, btnBackInCodeLogin;
     EditText edtxCode;
 
     final String CODE = "0000";
@@ -22,6 +22,7 @@ public class InputCode extends AppCompatActivity {
         setContentView(R.layout.activity_input_code);
 
         imgVwOkayCode = findViewById(R.id.imgVwCodeOkay);
+        btnBackInCodeLogin = findViewById(R.id.btnBackInCodeLogin);
         edtxCode = findViewById(R.id.edtxCode);
 
         imgVwOkayCode.setOnClickListener(new View.OnClickListener() {
@@ -30,6 +31,14 @@ public class InputCode extends AppCompatActivity {
                 validarCodigo();
             }
         });
+
+        btnBackInCodeLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                backLogin(v);
+            }
+        });
+
     }
 
     public void validarCodigo(){
@@ -37,6 +46,10 @@ public class InputCode extends AppCompatActivity {
             Intent welcomeParticipants = new Intent(InputCode.this,WelcomeParticipants.class);
             startActivity(welcomeParticipants);
         }
+    }
 
+    public void backLogin(View view){
+        Intent intent = new Intent(InputCode.this,iniciarSesionCajeroActivity.class);
+        startActivity(intent);
     }
 }

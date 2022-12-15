@@ -43,12 +43,8 @@ public class iniciarSesionCajeroActivity extends AppCompatActivity {
     }
     public void validarIngreso(View view){
         String email = edtxEmail.getText().toString();
-        String password = edtxPassword.getText().toString();
-
-
         if(email.equals(adminEmailOrNickName)) {
         Intent homeAdmin = new Intent(iniciarSesionCajeroActivity.this,MenuCajero.class);
-        homeAdmin.putExtra("AdminName",email);
         startActivity(homeAdmin);
         }else{
             Intent inputCode = new Intent(iniciarSesionCajeroActivity.this,InputCode.class);

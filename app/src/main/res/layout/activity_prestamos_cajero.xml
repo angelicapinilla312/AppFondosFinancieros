@@ -131,7 +131,7 @@
         tools:ignore="TextContrastCheck" />
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/btnBackPrestamoHome"
         android:layout_width="85dp"
         android:layout_height="54dp"
         android:layout_marginTop="44dp"

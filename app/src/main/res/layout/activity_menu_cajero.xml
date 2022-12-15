@@ -77,7 +77,7 @@
         tools:srcCompat="@drawable/ic_user" />
 
     <ImageView
-        android:id="@+id/bntParticipantes"
+        android:id="@+id/btnParticipantes"
         android:layout_width="145dp"
         android:layout_height="114dp"
         android:layout_marginStart="47dp"
@@ -111,7 +111,7 @@
         app:layout_constraintEnd_toStartOf="@+id/btnSeguimiento"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bntParticipantes"
+        app:layout_constraintTop_toBottomOf="@+id/btnParticipantes"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/lista" />
 
@@ -129,11 +129,10 @@
         app:srcCompat="@drawable/seguimiento" />
 
     <ImageView
-        android:id="@+id/imageView15"
+        android:id="@+id/btnBackToHome"
         android:layout_width="85dp"
         android:layout_height="80dp"
         android:layout_marginTop="96dp"
-        android:background="#0F3135"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

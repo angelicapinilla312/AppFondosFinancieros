@@ -33,4 +33,6 @@
     <string name="msgWelcomeMessage">Bienvenido a XFondo</string>
     <string name="msgBtnContinuar">Continuar</string>
     <string name="txtImgDescription">image welcome</string>
+    <string name="msgTitleReglasCajero">Lista Reglas</string>
+    <string name="msgTitleNombreFondoAhorro">Nombre del Fondo de Ahorro</string>
 </resources>

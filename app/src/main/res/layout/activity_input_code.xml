@@ -83,7 +83,7 @@
             app:srcCompat="@drawable/lineacool" />
 
     <ImageView
-        android:id="@+id/imageView14"
+        android:id="@+id/btnBackInCodeLogin"
         android:layout_width="68dp"
         android:layout_height="65dp"
         android:layout_marginTop="108dp"
