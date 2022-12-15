@@ -9,6 +9,11 @@ public class Fund implements Serializable, Comparable{
     private double amountSaved;
     private double savingsBasis;
     private Date creationDate;
+    private Date periodicity_contributions;
+    private int minAmountContributions;
+    private double interes;
+    private int maxDues;
+    private
 
 
     @Override
