@@ -15,7 +15,6 @@ public class InputCode extends AppCompatActivity {
 
     final String CODE = "0000";
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
