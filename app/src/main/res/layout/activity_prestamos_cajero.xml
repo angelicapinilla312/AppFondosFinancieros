@@ -41,21 +41,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/btnBackMenuCajeroPrestamo"
-        android:layout_width="142dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="237dp"
-        android:layout_marginBottom="88dp"
-        android:contentDescription="volverIniciarSesionPrestamos"
-        android:onClick="regresarMenuPrestamos"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/ic_back" />
-
     <TextView
         android:id="@+id/txtListaPrestamos"
         android:layout_width="wrap_content"
@@ -132,7 +117,7 @@
         android:layout_width="202dp"
         android:layout_height="48dp"
         android:layout_marginStart="117dp"
-        android:layout_marginTop="13dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="92dp"
         android:backgroundTint="#B06ABC"
         android:fontFamily="@font/autour_one"
@@ -140,8 +125,21 @@
         android:textColor="#FFFFFF"
         app:cornerRadius="16sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
         tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/btnBackPrestamoHome"
+        android:layout_width="85dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPrestar"
+        app:layout_constraintVertical_bias="0.111"
+        app:srcCompat="@drawable/ic_back" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

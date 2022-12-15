@@ -25,81 +25,34 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="79dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="88dp"
         android:text="Agregar Participante"
         android:textSize="16sp"
-        app:layout_constraintStart_toEndOf="@+id/imageButton3"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/listaParticipantes" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="82dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="104dp"
         android:text="Editar Participante"
         android:textSize="16sp"
-        app:layout_constraintStart_toEndOf="@+id/imageButton4"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="66dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="88dp"
         android:text="Eliminar Participante"
-        app:layout_constraintStart_toEndOf="@+id/imageButton5"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
         tools:textSize="16sp" />
-
-    <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="82dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="63dp"
-        android:contentDescription="aggParticipantes"
-        android:foreground="@drawable/adduser"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listaParticipantes" />
-
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="82dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="25dp"
-        android:contentDescription="EditParticipante"
-        android:foreground="@drawable/edituser"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
-
-    <ImageButton
-        android:id="@+id/imageButton5"
-        android:layout_width="82dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="23dp"
-        android:contentDescription="Eliminar Participante"
-        android:foreground="@drawable/deleteuser"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
-
-    <ImageButton
-        android:id="@+id/btnBackMenuCajeroParti"
-        android:layout_width="142dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="237dp"
-        android:layout_marginBottom="59dp"
-        android:contentDescription="volverCajeroParti"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/ic_back" />
-
 
     <ListView
         android:id="@+id/listaParticipantes"
@@ -109,5 +62,51 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtListaParticipantes" />
+
+    <ImageView
+        android:id="@+id/btnAgregarParticipante"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listaParticipantes"
+        app:srcCompat="@drawable/adduser" />
+
+    <ImageView
+        android:id="@+id/btnEditarParticipante"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="27dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintHorizontal_bias="0.598"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAgregarParticipante"
+        app:srcCompat="@drawable/edituser" />
+
+    <ImageView
+        android:id="@+id/btnBorrarParticipante"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView6"
+        app:layout_constraintHorizontal_bias="0.598"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEditarParticipante"
+        app:srcCompat="@drawable/deleteuser" />
+
+    <ImageView
+        android:id="@+id/btnBackParticipantHome"
+        android:layout_width="68dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="92dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_back" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

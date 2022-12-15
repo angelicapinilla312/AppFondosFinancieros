@@ -12,6 +12,31 @@
         android:theme="@style/Theme.AppFondosFinancieros"
         tools:targetApi="31">
         <activity
+            android:name=".PayFee"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+        <meta-data
+            android:name="android.app.lib_name"
+            android:value="" />
+    </activity>
+        <activity
+            android:name=".Contribution"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+        <meta-data
+            android:name="android.app.lib_name"
+            android:value="" />
+         </activity>
+        <activity
+            android:name=".ReglasCajero"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <activity
             android:name=".SeguimientoCajero"
 
             android:theme="@style/Theme.AppCompat.NoActionBar"
@@ -21,6 +46,16 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+        <activity
+
+            android:name=".Configuration"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+        <meta-data
+            android:name="android.app.lib_name"
+            android:value="" />
+        </activity>
+
         <activity
             android:name=".PrestamosCajero"
 
@@ -39,6 +74,15 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+        <activity
+            android:name=".HomeParticipant"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+        <meta-data
+            android:name="android.app.lib_name"
+            android:value="" />
+        </activity>
+
         <activity
             android:name=".AdminParticipantes"
 
@@ -63,12 +107,53 @@
             android:name=".MenuCajero"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.NoActionBar">
+
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".iniciarSesionCajeroActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".LoanDetail"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".LoanApplication"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity android:name=".LoanRequest"
+        android:exported="false"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".WelcomeParticipants"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".InputCode"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <meta-data
