@@ -1,7 +1,8 @@
 package com.example.appfondosfinancieros;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import androidx.annotation.NonNull;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -29,7 +30,7 @@ import java.util.List;
 public class ParticipantesCajero extends AppCompatActivity {
 
     ImageView btnBackParticipantHome;
-    EditText edtxDocument, edtxName,edtxLastName, edtxPhoneNumber,edtxAddress;
+    EditText edtxDocument, edtxName, edtxLastName, edtxPhoneNumber, edtxAddress;
     ListView listViewParticipants;
 
     private List<Participant> participantList = new ArrayList<>();
@@ -37,8 +38,8 @@ public class ParticipantesCajero extends AppCompatActivity {
     Participant participantSelected;
 
     // Clases para firebase
-     DatabaseReference databaseReference;
-     FirebaseDatabase firebaseDatabase;
+    DatabaseReference databaseReference;
+    FirebaseDatabase firebaseDatabase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,11 +52,10 @@ public class ParticipantesCajero extends AppCompatActivity {
         edtxLastName = findViewById(R.id.edtxLastName);
         edtxPhoneNumber = findViewById(R.id.edtxPhoneNumber);
         edtxAddress = findViewById(R.id.edtxAddress);
-
         listViewParticipants = findViewById(R.id.listViewParticipants);
 
-        // inicializarFirebase();
-        // listarDatos();
+        inicializarFirebase();
+        listarDatos();
 
         btnBackParticipantHome.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -81,8 +81,6 @@ public class ParticipantesCajero extends AppCompatActivity {
         startActivity(backp);
     }
 
-
-    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_participante, menu);
         return super.onCreateOptionsMenu(menu);
@@ -98,13 +96,12 @@ public class ParticipantesCajero extends AppCompatActivity {
         String telefono = edtxPhoneNumber.getText().toString();
 
         switch (item.getItemId()) {
-            case R.id.btnAgregarParticipante:
-                if (documento.isEmpty()||nombre.isEmpty()||
-                        apellido.isEmpty()||direccion.isEmpty()||telefono.isEmpty()){
+            case R.id.btnAddParticipant:
+                if (documento.isEmpty() || nombre.isEmpty() ||
+                        apellido.isEmpty() || direccion.isEmpty() || telefono.isEmpty()) {
                     validacion();
-                }
-                else {
-                    Participant participant= new Participant();
+                } else {
+                    Participant participant = new Participant();
                     participant.setName(nombre);
                     participant.setDocument(documento);
                     participant.setLastName(apellido);
@@ -116,8 +113,7 @@ public class ParticipantesCajero extends AppCompatActivity {
                     limpiarCajas();
                     break;
                 }
-
-            case R.id.btnEditarParticipante:
+            case R.id.btnEditParticipant:
                 Participant participant = new Participant();
                 participant.setDocument(participantSelected.getDocument());
                 participant.setName(edtxName.getText().toString().trim());
@@ -130,7 +126,7 @@ public class ParticipantesCajero extends AppCompatActivity {
                 limpiarCajas();
                 break;
 
-            case R.id.btnBorrarParticipante:
+            case R.id.btnDeleteParticipant:
                 participant = new Participant();
                 participant.setDocument(participantSelected.getDocument());
                 databaseReference.child("participant").child(participant.getDocument()).removeValue();
@@ -138,20 +134,22 @@ public class ParticipantesCajero extends AppCompatActivity {
                         Toast.LENGTH_SHORT).show();
                 limpiarCajas();
                 break;
+
             default:
                 break;
         }
         return true;
     }
 
-    private void inicializarFirebase(){
+    private void inicializarFirebase() {
         FirebaseApp.initializeApp(this);
         FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
-        databaseReference= firebaseDatabase.getReference();
+        databaseReference = firebaseDatabase.getReference();
         Toast.makeText(this, "Inicializando base de datos",
                 Toast.LENGTH_SHORT).show();
     }
-    public void limpiarCajas(){
+
+    public void limpiarCajas() {
         edtxDocument.setText("");
         edtxName.setText("");
         edtxLastName.setText("");
@@ -159,48 +157,46 @@ public class ParticipantesCajero extends AppCompatActivity {
         edtxAddress.setText("");
     }
 
-    public void validacion(){
-        String documento= edtxDocument.getText().toString();
-        String nombre= edtxName.getText().toString();
-        String apellido= edtxLastName.getText().toString();
-        String direccion= edtxAddress.getText().toString();
-        String telefono= edtxPhoneNumber.getText().toString();
+    public void validacion() {
+        String documento = edtxDocument.getText().toString();
+        String nombre = edtxName.getText().toString();
+        String apellido = edtxLastName.getText().toString();
+        String direccion = edtxAddress.getText().toString();
+        String telefono = edtxPhoneNumber.getText().toString();
 
-        if (documento.isEmpty()){
+        if (documento.isEmpty()) {
             edtxDocument.setError("requerido");
-        }
-        else if (nombre.isEmpty()){
+        } else if (nombre.isEmpty()) {
             edtxName.setError("requerido");
-        }
-        else if (apellido.isEmpty()){
+        } else if (apellido.isEmpty()) {
             edtxLastName.setError("requerido");
-        }
-        else if (direccion.isEmpty()){
+        } else if (direccion.isEmpty()) {
             edtxAddress.setError("requerido");
-        }
-        else  {
+        } else {
             edtxPhoneNumber.setText("requerido");
         }
     }
 
 
-
-    private void listarDatos(){
+    private void listarDatos() {
         databaseReference.child("participant").addValueEventListener(new ValueEventListener() {
+
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 participantList.clear();
-                for(DataSnapshot objSnapshot: snapshot.getChildren()){
-                    Participant participant= objSnapshot.getValue(Participant.class);
+                for (DataSnapshot objSnapshot : snapshot.getChildren()) {
+                    Participant participant = objSnapshot.getValue(Participant.class);
                     participantList.add(participant);
-                    participantArrayAdapter= new ArrayAdapter<Participant>(
-                            ParticipantesCajero.this,android.R.layout.simple_list_item_1,
+                    participantArrayAdapter = new ArrayAdapter<Participant>(
+                            ParticipantesCajero.this, android.R.layout.simple_list_item_1,
                             participantList);
                     listViewParticipants.setAdapter(participantArrayAdapter);
                 }
             }
+
             @Override
-            public void onCancelled(@NonNull DatabaseError error) {}
+            public void onCancelled(@NonNull DatabaseError error) {
+            }
         });
     }
 

@@ -1,28 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/btnAddParticipant"
+        android:icon="@drawable/adduser"
+        android:title="Add participant"
+        app:showAsAction="always"
+        ></item>
 
     <item
-        android:title="Item"
-        app:showAsAction="always" />
-    <item
-    android:id="@+id/btnAgregarParticipante"
-    android:icon="@drawable/adduser"
-    android:title="agregar registro"
-    app:showAsAction="always"
-    ></item>
-
-    <item
-        android:id="@+id/btnEditarParticipante"
+        android:id="@+id/btnEditParticipant"
         android:icon="@drawable/edituser"
-        android:title="actualizar registro"
+        android:title="Edit participant"
         app:showAsAction="always"
         ></item>
+
     <item
-        android:id="@+id/btnBorrarParticipante"
+        android:id="@+id/btnDeleteParticipant"
         android:icon="@drawable/deleteuser"
-        android:title="eliminar registro"
+        android:title="Delete participant"
         app:showAsAction="always"
         ></item>
-    <item android:title="Item" />
+
 </menu>
