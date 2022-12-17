@@ -14,7 +14,7 @@ public class iniciarSesionCajeroActivity extends AppCompatActivity {
     Button btnLogin, btnBack;
     EditText edtxEmail, edtxPassword;
 
-    final String  adminEmailOrNickName = "juan.castellanosj";
+    final String  adminEmailOrNickName = "Admin";
 
 
     @Override
