@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+    android:id="@+id/btnAgregarParticipante"
+    android:icon="@drawable/adduser"
+    android:title="agregar registro"
+    app:showAsAction="always"
+    ></item>
+
+    <item
+        android:id="@+id/btnEditarParticipante"
+        android:icon="@drawable/edituser"
+        android:title="actualizar registro"
+        app:showAsAction="always"
+        ></item>
+    <item
+        android:id="@+id/btnBorrarParticipante"
+        android:icon="@drawable/deleteuser"
+        android:title="eliminar registro"
+        app:showAsAction="always"
+        ></item>
+</menu>
