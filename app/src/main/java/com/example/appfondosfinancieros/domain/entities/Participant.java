@@ -8,22 +8,19 @@ public class Participant implements Serializable {
     private String name;
     private String lastName;
     private String document;
-    private String docType;
-    private Date birthDate;
     private String phoneNumber;
-    private String urlImage;
+    private String address;
+
 
     public Participant() {
     }
 
-    public Participant(String name, String lastName, String document, String docType, Date birthDate, String phoneNumber, String urlImage) {
+    public Participant(String name, String lastName, String document, String phoneNumber, String address) {
         this.name = name;
         this.lastName = lastName;
         this.document = document;
-        this.docType = docType;
-        this.birthDate = birthDate;
         this.phoneNumber = phoneNumber;
-        this.urlImage = urlImage;
+        this.address = address;
     }
 
     public String getName() {
@@ -50,22 +47,6 @@ public class Participant implements Serializable {
         this.document = document;
     }
 
-    public String getDocType() {
-        return docType;
-    }
-
-    public void setDocType(String docType) {
-        this.docType = docType;
-    }
-
-    public Date getBirthDate() {
-        return birthDate;
-    }
-
-    public void setBirthDate(Date birthDate) {
-        this.birthDate = birthDate;
-    }
-
     public String getPhoneNumber() {
         return phoneNumber;
     }
@@ -74,12 +55,12 @@ public class Participant implements Serializable {
         this.phoneNumber = phoneNumber;
     }
 
-    public String getUrlImage() {
-        return urlImage;
+    public String getAddress() {
+        return address;
     }
 
-    public void setUrlImage(String urlImage) {
-        this.urlImage = urlImage;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     @Override
@@ -88,10 +69,8 @@ public class Participant implements Serializable {
                 "name='" + name + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", document='" + document + '\'' +
-                ", docType='" + docType + '\'' +
-                ", birthDate=" + birthDate +
                 ", phoneNumber='" + phoneNumber + '\'' +
-                ", urlImage='" + urlImage + '\'' +
+                ", address = '"+ address +'\''+
                 '}';
     }
 }
