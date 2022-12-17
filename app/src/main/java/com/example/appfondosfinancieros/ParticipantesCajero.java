@@ -37,8 +37,8 @@ public class ParticipantesCajero extends AppCompatActivity {
     Participant participantSelected;
 
     // Clases para firebase
-    DatabaseReference databaseReference;
-    FirebaseDatabase firebaseDatabase;
+     DatabaseReference databaseReference;
+     FirebaseDatabase firebaseDatabase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,8 +54,8 @@ public class ParticipantesCajero extends AppCompatActivity {
 
         listViewParticipants = findViewById(R.id.listViewParticipants);
 
-        inicializarFirebase();
-        listarDatos();
+        // inicializarFirebase();
+        // listarDatos();
 
         btnBackParticipantHome.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -75,6 +75,13 @@ public class ParticipantesCajero extends AppCompatActivity {
             }
         });
     }
+
+    public void regresarMenuParti(View view) {
+        Intent backp = new Intent(ParticipantesCajero.this, MenuCajero.class);
+        startActivity(backp);
+    }
+
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_participante, menu);
@@ -151,6 +158,7 @@ public class ParticipantesCajero extends AppCompatActivity {
         edtxPhoneNumber.setText("");
         edtxAddress.setText("");
     }
+
     public void validacion(){
         String documento= edtxDocument.getText().toString();
         String nombre= edtxName.getText().toString();
@@ -175,10 +183,7 @@ public class ParticipantesCajero extends AppCompatActivity {
         }
     }
 
-    public void regresarMenuParti(View view) {
-        Intent backp = new Intent(ParticipantesCajero.this, MenuCajero.class);
-        startActivity(backp);
-    }
+
 
     private void listarDatos(){
         databaseReference.child("participant").addValueEventListener(new ValueEventListener() {

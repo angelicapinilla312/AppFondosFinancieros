@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="121dp"
-        android:layout_marginTop="29dp"
+        android:layout_marginTop="76dp"
         android:layout_marginEnd="122dp"
         android:text="Participants List"
         android:textSize="20sp"
@@ -23,9 +23,10 @@
 
     <ListView
         android:id="@+id/listViewParticipants"
-        android:layout_width="408dp"
-        android:layout_height="211dp"
-        android:layout_marginTop="34dp"
+        android:layout_width="410dp"
+        android:layout_height="176dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="1dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtListaParticipantes" />
@@ -44,8 +45,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout3"
-        android:layout_width="397dp"
-        android:layout_height="343dp"
+        android:layout_width="357dp"
+        android:layout_height="373dp"
         android:layout_marginTop="12dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
@@ -57,14 +58,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/autour_one"
-            android:text="Document:"
+            android:text="ID"
             android:textSize="16sp" />
 
         <EditText
             android:id="@+id/edtxDocument"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
+            android:layout_height="48dp"
+            android:ems="30"
+            android:hint="Write ID"
             android:inputType="textPersonName" />
 
         <TextView
@@ -78,8 +80,9 @@
         <EditText
             android:id="@+id/edtxName"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:ems="10"
+            android:hint="Write participant name"
             android:inputType="textPersonName" />
 
         <TextView
@@ -93,8 +96,9 @@
         <EditText
             android:id="@+id/edtxLastName"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:ems="10"
+            android:hint="Write lastname"
             android:inputType="textPersonName" />
 
         <TextView
@@ -108,8 +112,9 @@
         <EditText
             android:id="@+id/edtxPhoneNumber"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:ems="10"
+            android:hint="Write phonenumber"
             android:inputType="textPersonName" />
 
         <TextView
@@ -123,8 +128,9 @@
         <EditText
             android:id="@+id/edtxAddress"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:ems="10"
+            android:hint="Write Address"
             android:inputType="textPersonName" />
     </LinearLayout>
 
