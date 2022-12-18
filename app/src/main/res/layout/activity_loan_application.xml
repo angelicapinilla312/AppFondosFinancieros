@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".LoanRequest">
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/textView13"
@@ -116,8 +115,9 @@
         android:layout_width="165dp"
         android:layout_height="41dp"
         android:layout_marginTop="72dp"
-        android:backgroundTint="#238F99"
-        android:text="Solicitar"
+        android:backgroundTint="#B06ABC"
+        android:text="Apply for"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextDate3" />
@@ -127,8 +127,9 @@
         android:layout_width="165dp"
         android:layout_height="41dp"
         android:layout_marginTop="36dp"
-        android:backgroundTint="#F44336"
-        android:text="Regresar"
+        android:backgroundTint="#0B5C64"
+        android:text="Back"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.508"

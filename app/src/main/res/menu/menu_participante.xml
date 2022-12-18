@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/btnAddParticipant"
+        android:icon="@drawable/adduser"
+        android:title="Add participant"
+        app:showAsAction="always"
+        ></item>
+
+    <item
+        android:id="@+id/btnEditParticipant"
+        android:icon="@drawable/edituser"
+        android:title="Edit participant"
+        app:showAsAction="always"
+        ></item>
+
+    <item
+        android:id="@+id/btnDeleteParticipant"
+        android:icon="@drawable/deleteuser"
+        android:title="Delete participant"
+        app:showAsAction="always"
+        ></item>
+
+</menu>

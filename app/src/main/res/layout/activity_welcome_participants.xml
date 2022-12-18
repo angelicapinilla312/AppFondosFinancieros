@@ -20,16 +20,17 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="254dp"
-        android:layout_height="59dp"
+        android:layout_width="286dp"
+        android:layout_height="106dp"
         android:layout_marginTop="44dp"
         android:fontFamily="@font/autour_one"
         android:lineSpacingExtra="8sp"
         android:text="@string/msgWelcome"
-        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.184"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
@@ -61,17 +62,20 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3"
         tools:ignore="TextContrastCheck" />
 
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="413dp"
-        android:layout_height="193dp"
-        android:layout_marginTop="31dp"
-        android:scaleType="fitXY"
+    <Button
+        android:id="@+id/btnWelcome2"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="233dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#0B5C64"
+        android:text="Back"
+        app:cornerRadius="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnWelcome"
-        app:srcCompat="@drawable/lineaslogin" />
+        app:layout_constraintVertical_bias="0.011"
+        tools:ignore="TextContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnIniciarCajero, btnIniciarParticipante;
+    Button btnIniciarCajero;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,19 +17,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         btnIniciarCajero = findViewById(R.id.btnIniciarCajero);
-        btnIniciarParticipante = findViewById(R.id.btnPrestar);
 
         btnIniciarCajero.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                iniciarSesionCajero(v);
+                signIn(v);
             }
         });
 
     }
 
-    public void iniciarSesionCajero(View view){
-        Intent inisesCajero = new Intent(MainActivity.this,iniciarSesionCajeroActivity.class);
-        startActivity(inisesCajero);
+    public void signIn(View view){
+        Intent signInActivity = new Intent(MainActivity.this,iniciarSesionCajeroActivity.class);
+        startActivity(signInActivity);
     }
 }

@@ -8,36 +8,19 @@ public class Participant implements Serializable {
     private String document;
     private String name;
     private String lastName;
-    private String docType;
-    private Date birthDate;
     private String phoneNumber;
-    private String urlImage;
-    private int userId;
-    private String fundCode;
+    private String address;
+
 
     public Participant() {
     }
 
-    public Participant(String document, String name, String lastName,
-                       String docType, Date birthDate, String phoneNumber,
-                       String urlImage, int userId, String fundCode) {
-        this.document = document;
+    public Participant(String name, String lastName, String document, String phoneNumber, String address) {
         this.name = name;
         this.lastName = lastName;
-        this.docType = docType;
-        this.birthDate = birthDate;
-        this.phoneNumber = phoneNumber;
-        this.urlImage = urlImage;
-        this.userId = userId;
-        this.fundCode = fundCode;
-    }
-
-    public String getDocument() {
-        return document;
-    }
-
-    public void setDocument(String document) {
         this.document = document;
+        this.phoneNumber = phoneNumber;
+        this.address = address;
     }
 
     public String getName() {
@@ -56,20 +39,12 @@ public class Participant implements Serializable {
         this.lastName = lastName;
     }
 
-    public String getDocType() {
-        return docType;
+    public String getDocument() {
+        return document;
     }
 
-    public void setDocType(String docType) {
-        this.docType = docType;
-    }
-
-    public Date getBirthDate() {
-        return birthDate;
-    }
-
-    public void setBirthDate(Date birthDate) {
-        this.birthDate = birthDate;
+    public void setDocument(String document) {
+        this.document = document;
     }
 
     public String getPhoneNumber() {
@@ -80,28 +55,12 @@ public class Participant implements Serializable {
         this.phoneNumber = phoneNumber;
     }
 
-    public String getUrlImage() {
-        return urlImage;
+    public String getAddress() {
+        return address;
     }
 
-    public void setUrlImage(String urlImage) {
-        this.urlImage = urlImage;
-    }
-
-    public int getUserId() {
-        return userId;
-    }
-
-    public void setUserId(int userId) {
-        this.userId = userId;
-    }
-
-    public String getFundCode() {
-        return fundCode;
-    }
-
-    public void setFundCode(String fundCode) {
-        this.fundCode = fundCode;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     @Override
@@ -110,12 +69,8 @@ public class Participant implements Serializable {
                 "document='" + document + '\'' +
                 ", name='" + name + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", docType='" + docType + '\'' +
-                ", birthDate=" + birthDate +
                 ", phoneNumber='" + phoneNumber + '\'' +
-                ", urlImage='" + urlImage + '\'' +
-                ", userId=" + userId +
-                ", fundCode='" + fundCode + '\'' +
+                ", address = '"+ address +'\''+
                 '}';
     }
 }

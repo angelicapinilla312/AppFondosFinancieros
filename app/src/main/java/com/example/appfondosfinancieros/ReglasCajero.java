@@ -5,11 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 public class ReglasCajero extends AppCompatActivity {
 
-    ImageView btnGuardarReglas, btnBackReglasHome;
+    Button btnGuardarReglas, btnBackReglasHome;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -7,6 +7,62 @@
     tools:context=".MenuCajero">
 
     <TextView
+        android:id="@+id/textView29"
+        android:layout_width="173dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/autour_one"
+        android:text="Participant"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnParticipantes" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="173dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/autour_one"
+        android:text="Terms, conditions and Rules"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnReglas" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="171dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/autour_one"
+        android:text="Tracing"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSeguimiento" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="173dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/autour_one"
+        android:text="Loans"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPrestamos" />
+
+    <TextView
         android:id="@+id/txtVwBalance"
         android:layout_width="293dp"
         android:layout_height="75dp"
@@ -27,37 +83,40 @@
 
     <TextView
         android:id="@+id/txtVwAdminName"
-        android:layout_width="140dp"
-        android:layout_height="43dp"
+        android:layout_width="189dp"
+        android:layout_height="39dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="79dp"
+        android:fontFamily="@font/autour_one"
         android:text="Admin Name"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/txtSaludo" />
 
     <TextView
         android:id="@+id/txtVwTotalFondo"
-        android:layout_width="157dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="31dp"
-        android:layout_marginTop="54dp"
-        android:layout_marginEnd="223dp"
-        android:text="Total del Fondo"
+        android:layout_width="242dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/autour_one"
+        android:text="Fund balance"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.349"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <TextView
         android:id="@+id/txtSaludo"
-        android:layout_width="138dp"
-        android:layout_height="33dp"
+        android:layout_width="182dp"
+        android:layout_height="37dp"
         android:layout_marginStart="22dp"
         android:layout_marginTop="52dp"
-        android:text="Hola!"
+        android:fontFamily="@font/autour_one"
+        android:text="Hello"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -66,8 +125,8 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="141dp"
-        android:layout_height="75dp"
+        android:layout_width="134dp"
+        android:layout_height="89dp"
         android:layout_marginTop="52dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.114"
@@ -77,23 +136,22 @@
 
     <ImageView
         android:id="@+id/btnParticipantes"
-        android:layout_width="145dp"
-        android:layout_height="114dp"
-        android:layout_marginStart="47dp"
-        android:layout_marginTop="37dp"
-        android:layout_marginEnd="18dp"
+        android:layout_width="119dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="32dp"
         android:contentDescription="partiTomenu"
         app:layout_constraintEnd_toStartOf="@+id/btnPrestamos"
+        app:layout_constraintHorizontal_bias="0.41"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtVwBalance"
         app:srcCompat="@drawable/ic_parti" />
 
     <ImageView
         android:id="@+id/btnPrestamos"
-        android:layout_width="142dp"
-        android:layout_height="119dp"
-        android:layout_marginTop="37dp"
-        android:layout_marginEnd="59dp"
+        android:layout_width="119dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="44dp"
         android:contentDescription="prestamoToMenu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtVwBalance"
@@ -101,42 +159,41 @@
 
     <ImageView
         android:id="@+id/btnReglas"
-        android:layout_width="138dp"
-        android:layout_height="123dp"
-        android:layout_marginStart="51dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="119dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="20dp"
         android:contentDescription="reglasToHome"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnSeguimiento"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnParticipantes"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@+id/textView29"
         app:srcCompat="@drawable/lista" />
 
     <ImageView
         android:id="@+id/btnSeguimiento"
-        android:layout_width="148dp"
-        android:layout_height="124dp"
-        android:layout_marginTop="27dp"
-        android:layout_marginEnd="56dp"
+        android:layout_width="119dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="44dp"
         android:contentDescription="historicoToMenu"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnPrestamos"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnReglas"
+        app:layout_constraintTop_toBottomOf="@+id/textView32"
         app:srcCompat="@drawable/seguimiento" />
 
-    <ImageView
+    <Button
         android:id="@+id/btnBackToHome"
-        android:layout_width="103dp"
-        android:layout_height="78dp"
-        android:layout_marginStart="154dp"
-        android:layout_marginEnd="154dp"
-        android:layout_marginBottom="84dp"
+        android:layout_width="206dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="#0B5C64"
+        android:fontFamily="@font/autour_one"
+        android:text="Back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/ic_back" />
+        app:layout_constraintTop_toBottomOf="@+id/textView35"
+        app:layout_constraintVertical_bias="0.782" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
