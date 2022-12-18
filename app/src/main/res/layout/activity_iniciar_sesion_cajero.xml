@@ -11,7 +11,7 @@
         android:layout_width="206dp"
         android:layout_height="0dp"
         android:layout_marginTop="56dp"
-        android:backgroundTint="#40A495"
+        android:backgroundTint="#B06ABC"
         android:fontFamily="@font/autour_one"
         android:text="@string/msgBtnLogin"
         android:textColor="#FFFFFF"
@@ -27,7 +27,7 @@
         android:layout_width="206dp"
         android:layout_height="48dp"
         android:layout_marginBottom="72dp"
-        android:backgroundTint="#B06ABC"
+        android:backgroundTint="#0B5C64"
         android:fontFamily="@font/autour_one"
         android:text="@string/msgBtnBack"
         android:textColor="#FFFFFF"
@@ -37,7 +37,7 @@
         app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnLogin"
-        app:layout_constraintVertical_bias="0.981"
+        app:layout_constraintVertical_bias="0.452"
         tools:ignore="TextContrastCheck" />
 
     <TextView

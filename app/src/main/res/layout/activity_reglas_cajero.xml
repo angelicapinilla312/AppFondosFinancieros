@@ -13,6 +13,7 @@
         android:layout_marginStart="150dp"
         android:layout_marginTop="28dp"
         android:layout_marginEnd="151dp"
+        android:fontFamily="@font/autour_one"
         android:text="@string/msgTitleReglasCajero"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,6 +37,7 @@
             android:id="@+id/txtNombreFondo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/autour_one"
             android:text="@string/msgTitleNombreFondoAhorro"
             android:textSize="18sp" />
 
@@ -44,16 +46,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Escribe el nombre del fondo de ahorro"
+            android:fontFamily="@font/autour_one"
+            android:hint="Fund name"
+            android:importantForAutofill="no"
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:importantForAutofill="no" />
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/txtBaseAhorro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Base de Ahorro"
+            android:fontFamily="@font/autour_one"
+            android:text="Fund Basis:"
             android:textSize="18sp" />
 
         <EditText
@@ -61,16 +66,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Escribe la cantidad de base de ahorro"
+            android:fontFamily="@font/autour_one"
+            android:hint="$0"
+            android:importantForAutofill="no"
             android:inputType="number"
-            android:minHeight="48dp"
-            android:importantForAutofill="no" />
+            android:minHeight="48dp" />
 
         <TextView
             android:id="@+id/txtMontoPrestamo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Máximo monto de prestamo"
+            android:fontFamily="@font/autour_one"
+            android:text="Max Amount Loan:"
             android:textSize="18sp" />
 
         <EditText
@@ -78,16 +85,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Escribe la cantidad máxima de prestamo"
+            android:fontFamily="@font/autour_one"
+            android:hint="0"
+            android:importantForAutofill="no"
             android:inputType="number"
-            android:minHeight="48dp"
-            android:importantForAutofill="no" />
+            android:minHeight="48dp" />
 
         <TextView
             android:id="@+id/txtTasaInteres"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Tasa de Interes"
+            android:fontFamily="@font/autour_one"
+            android:text="Percentage Interest:"
             android:textSize="18sp" />
 
         <EditText
@@ -95,16 +104,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Escribe la tasa de interes"
+            android:fontFamily="@font/autour_one"
+            android:hint="2%"
+            android:importantForAutofill="no"
             android:inputType="numberDecimal"
-            android:minHeight="48dp"
-            android:importantForAutofill="no" />
+            android:minHeight="48dp" />
 
         <TextView
             android:id="@+id/txtMaximoCntCuotas"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Máxima cantidad de cuotas"
+            android:fontFamily="@font/autour_one"
+            android:text="Max Amount Fees:"
             android:textSize="18sp" />
 
         <EditText
@@ -112,16 +123,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Escribe la cantidad máxima de cuotas"
+            android:fontFamily="@font/autour_one"
+            android:hint="24"
+            android:importantForAutofill="no"
             android:inputType="number"
-            android:minHeight="48dp"
-            android:importantForAutofill="no" />
+            android:minHeight="48dp" />
 
         <TextView
             android:id="@+id/txtEtiquetaCodigo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Código de Suscripción"
+            android:fontFamily="@font/autour_one"
+            android:text="Suscription Code:"
             android:textSize="18sp" />
 
 
@@ -135,6 +148,7 @@
                 android:layout_width="257dp"
                 android:layout_height="43dp"
                 android:background="#A36DAC"
+                android:fontFamily="@font/autour_one"
                 android:gravity="center"
                 android:text="FXSDF1L"
                 android:textAlignment="center"
@@ -153,30 +167,32 @@
 
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/btnGuardarReglas"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="40dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnBackReglasHome"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.066"
-        app:srcCompat="@drawable/ic_save"
-        android:contentDescription="TODO" />
-
-    <ImageView
+    <Button
         android:id="@+id/btnBackReglasHome"
-        android:layout_width="69dp"
-        android:layout_height="56dp"
-        android:layout_marginBottom="60dp"
-        android:background="#141F23"
+        android:layout_width="206dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="92dp"
+        android:backgroundTint="#0B5C64"
+        android:text="Back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/ic_back"
-        android:contentDescription="TODO" />
+        app:layout_constraintTop_toBottomOf="@+id/btnGuardarReglas"
+        app:layout_constraintVertical_bias="0.942" />
+
+    <Button
+        android:id="@+id/btnGuardarReglas"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="#A36DAC"
+        android:fontFamily="@font/autour_one"
+        android:text="Save Rules"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

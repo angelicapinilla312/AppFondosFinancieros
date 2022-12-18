@@ -13,7 +13,7 @@
         android:layout_marginStart="150dp"
         android:layout_marginTop="28dp"
         android:layout_marginEnd="151dp"
-        android:text="Historico Aportes"
+        android:text="Contribution History"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,7 +27,7 @@
         android:layout_marginStart="150dp"
         android:layout_marginTop="23dp"
         android:layout_marginEnd="151dp"
-        android:text="Historico Prestamos"
+        android:text="Loan History"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.51"
@@ -56,14 +56,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtHistorico2" />
 
-    <ImageView
+    <Button
         android:id="@+id/btnBackSeguimientoHome"
-        android:layout_width="73dp"
-        android:layout_height="55dp"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#0B5C64"
+        android:text="Back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lvPrestamos"
-        app:srcCompat="@drawable/ic_back" />
+        app:layout_constraintVertical_bias="0.347" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

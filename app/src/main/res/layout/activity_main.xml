@@ -27,8 +27,8 @@
 
     <Button
         android:id="@+id/btnIniciarCajero"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="206dp"
+        android:layout_height="48dp"
         android:layout_marginStart="133dp"
         android:layout_marginTop="79dp"
         android:layout_marginEnd="134dp"
@@ -37,9 +37,11 @@
         android:text="@string/msgBtnIniciarCajero"
         android:textColor="#FFFFFF"
         app:cornerRadius="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="TextContrastCheck" />
 
     <ImageView
@@ -62,18 +64,19 @@
         android:layout_width="291dp"
         android:layout_height="72dp"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="72dp"
         android:layout_marginEnd="60dp"
-        android:drawableEnd="@drawable/profits_78367"
         android:fontFamily="@font/autour_one"
-        android:text="Ahorrar cumple tus sueños, gastar los aleja."
+        android:text="@string/msgMainLogo"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textSize="16sp"
         android:textStyle="bold"
+        app:drawableEndCompat="@drawable/profits_78367"
         app:flow_horizontalAlign="center"
-        app:flow_verticalAlign="center"
+        app:flow_verticalAlign="bottom"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtVwBienvenido" />
 

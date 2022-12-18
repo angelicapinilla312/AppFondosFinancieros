@@ -29,15 +29,14 @@
 
     <TextView
         android:id="@+id/txtVwTotalFondo"
-        android:layout_width="157dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="31dp"
+        android:layout_width="253dp"
+        android:layout_height="37dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="223dp"
-        android:text="Total del Fondo"
+        android:fontFamily="@font/autour_one"
+        android:text="Fund Balance"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.354"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -48,7 +47,8 @@
         android:layout_marginStart="147dp"
         android:layout_marginTop="58dp"
         android:layout_marginEnd="128dp"
-        android:text="Lista Prestamo"
+        android:fontFamily="@font/autour_one"
+        android:text="Loan List"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -70,7 +70,8 @@
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Escoja el parcipante a recibir prestamo"
+            android:fontFamily="@font/autour_one"
+            android:text="Participant"
             android:textSize="18sp" />
 
         <ListView
@@ -82,7 +83,8 @@
             android:id="@+id/txtMontoaPrestar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Monto de prestamo"
+            android:fontFamily="@font/autour_one"
+            android:text="Loan amount"
             android:textSize="18sp" />
 
         <EditText
@@ -90,7 +92,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Escribe la cantidad de prestamo"
+            android:fontFamily="@font/autour_one"
+            android:hint="loan amount"
             android:inputType="number"
             android:minHeight="48dp" />
 
@@ -98,7 +101,8 @@
             android:id="@+id/txtCntCuotas"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Cantidad de cuotas"
+            android:fontFamily="@font/autour_one"
+            android:text="Dues amount"
             android:textSize="18sp" />
 
         <EditText
@@ -106,7 +110,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Escribe la cantidad de cuotas"
+            android:fontFamily="@font/autour_one"
+            android:hint="amount dues"
             android:inputType="number"
             android:minHeight="48dp" />
 
@@ -116,30 +121,33 @@
         android:id="@+id/btnPrestar"
         android:layout_width="202dp"
         android:layout_height="48dp"
-        android:layout_marginStart="117dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="92dp"
+        android:layout_marginTop="60dp"
         android:backgroundTint="#B06ABC"
         android:fontFamily="@font/autour_one"
-        android:text="Listo"
+        android:text="OK"
         android:textColor="#FFFFFF"
         app:cornerRadius="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
         tools:ignore="TextContrastCheck" />
 
-    <ImageView
+    <Button
         android:id="@+id/btnBackPrestamoHome"
-        android:layout_width="85dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="44dp"
+        android:layout_width="202dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#0B5C64"
+        android:fontFamily="@font/autour_one"
+        android:text="Back"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnPrestar"
-        app:layout_constraintVertical_bias="0.111"
-        app:srcCompat="@drawable/ic_back" />
+        app:layout_constraintVertical_bias="0.319"
+        tools:ignore="TextContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,12 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 
 public class InputCode extends AppCompatActivity {
 
-    ImageView imgVwOkayCode, btnBackInCodeLogin;
+    ;
+    Button btnOkayCode, btnBackToLogin;
     EditText edtxCode;
 
     final String CODE = "0000";
@@ -20,18 +21,19 @@ public class InputCode extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_input_code);
 
-        imgVwOkayCode = findViewById(R.id.imgVwCodeOkay);
-        btnBackInCodeLogin = findViewById(R.id.btnBackInCodeLogin);
+
+        btnOkayCode = findViewById(R.id.btnOkayCode);
+        btnBackToLogin = findViewById(R.id.btnBackToLogin);
         edtxCode = findViewById(R.id.edtxCode);
 
-        imgVwOkayCode.setOnClickListener(new View.OnClickListener() {
+        btnOkayCode.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                validarCodigo();
+                validateCode(v);
             }
         });
 
-        btnBackInCodeLogin.setOnClickListener(new View.OnClickListener() {
+        btnBackToLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 backLogin(v);
@@ -40,7 +42,7 @@ public class InputCode extends AppCompatActivity {
 
     }
 
-    public void validarCodigo(){
+    public void validateCode(View view){
         if(edtxCode.getText().toString().equals(CODE)){
             Intent welcomeParticipants = new Intent(InputCode.this,WelcomeParticipants.class);
             startActivity(welcomeParticipants);
@@ -48,7 +50,7 @@ public class InputCode extends AppCompatActivity {
     }
 
     public void backLogin(View view){
-        Intent intent = new Intent(InputCode.this,iniciarSesionCajeroActivity.class);
-        startActivity(intent);
+        Intent backLogin = new Intent(InputCode.this,iniciarSesionCajeroActivity.class);
+        startActivity(backLogin);
     }
 }
