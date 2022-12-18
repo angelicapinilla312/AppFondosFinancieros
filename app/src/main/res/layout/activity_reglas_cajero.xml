@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReglasCajero">
+
+    <TextView
+        android:id="@+id/txtListaReglas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="151dp"
+        android:text="@string/msgTitleReglasCajero"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="343dp"
+        android:layout_height="468dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="37dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtListaReglas">
+
+        <TextView
+            android:id="@+id/txtNombreFondo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/msgTitleNombreFondoAhorro"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etxtBaseAhorro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Escribe el nombre del fondo de ahorro"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:id="@+id/txtBaseAhorro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Base de Ahorro"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Escribe la cantidad de base de ahorro"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:id="@+id/txtMontoPrestamo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Máximo monto de prestamo"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/eTxtMontoPrestamo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Escribe la cantidad máxima de prestamo"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:id="@+id/txtTasaInteres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tasa de Interes"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etxtTasaInteres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Escribe la tasa de interes"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:id="@+id/txtMaximoCntCuotas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Máxima cantidad de cuotas"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etxtMaximoCntCuotas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Escribe la cantidad máxima de cuotas"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:id="@+id/txtEtiquetaCodigo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Código de Suscripción"
+            android:textSize="18sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtCodigoSuscripcion"
+                android:layout_width="257dp"
+                android:layout_height="43dp"
+                android:background="#A36DAC"
+                android:gravity="center"
+                android:text="FXSDF1L"
+                android:textAlignment="center"
+                android:textColor="#F3E5F5"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_share"
+                android:contentDescription="TODO" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btnGuardarReglas"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnBackReglasHome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.066"
+        app:srcCompat="@drawable/ic_save"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/btnBackReglasHome"
+        android:layout_width="69dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="60dp"
+        android:background="#141F23"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_back"
+        android:contentDescription="TODO" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

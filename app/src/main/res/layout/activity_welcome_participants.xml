@@ -6,4 +6,72 @@
     android:layout_height="match_parent"
     tools:context=".WelcomeParticipants">
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="416dp"
+        android:layout_height="250dp"
+        android:contentDescription="@string/txtImgDescription"
+        android:scaleType="fitXY"
+        android:shape="ring"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/people_bengala" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="254dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/autour_one"
+        android:lineSpacingExtra="8sp"
+        android:text="@string/msgWelcome"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.184"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="264dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="88dp"
+        android:fontFamily="@font/autour_one"
+        android:text="@string/msgWelcomeMessage"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/btnWelcome"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="233dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="84dp"
+        android:backgroundTint="#B06ABC"
+        android:text="@string/msgBtnContinuar"
+        app:cornerRadius="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="413dp"
+        android:layout_height="193dp"
+        android:layout_marginTop="31dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnWelcome"
+        app:srcCompat="@drawable/lineaslogin" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

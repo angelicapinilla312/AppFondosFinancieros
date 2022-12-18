@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ParticipantesCajero"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-65dp">
+
+    <TextView
+        android:id="@+id/txtParticipantes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="165dp"
+        android:text="Participants "
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtListaParticipantes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="133dp"
+        android:text="Participants List"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    <ImageView
+        android:id="@+id/btnBackParticipantHome"
+        android:layout_width="68dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="171dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="172dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listViewParticipants"
+        app:srcCompat="@drawable/ic_back" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="354dp"
+        android:layout_height="367dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="29dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtParticipantes">
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/autour_one"
+            android:text="ID Card"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtxDocument"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="30"
+            android:hint="Write ID Card"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/autour_one"
+            android:text="Name:"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtxName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="Write name"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/autour_one"
+            android:text="LastName:"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtxLastName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="Write lastname"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/autour_one"
+            android:text="PhoneNumber:"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtxPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="Write phonenumber"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/autour_one"
+            android:text="Address:"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtxAddress"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="Write Address"
+            android:inputType="textPersonName" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewParticipants"
+        android:layout_width="410dp"
+        android:layout_height="176dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtListaParticipantes" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

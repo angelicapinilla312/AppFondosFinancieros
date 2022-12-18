@@ -17,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         btnIniciarCajero = findViewById(R.id.btnIniciarCajero);
-        btnIniciarParticipante = findViewById(R.id.btnIniciarParticipante);
 
         btnIniciarCajero.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,5 +31,4 @@ public class MainActivity extends AppCompatActivity {
         Intent inisesCajero = new Intent(MainActivity.this,iniciarSesionCajeroActivity.class);
         startActivity(inisesCajero);
     }
-
 }

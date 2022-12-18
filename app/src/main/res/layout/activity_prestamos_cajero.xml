@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PrestamosCajero">
+
+    <TextView
+        android:id="@+id/txtVwBalance"
+        android:layout_width="293dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="62dp"
+        android:background="#C888D3"
+        android:fontFamily="@font/autour_one"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:outlineProvider="bounds"
+        android:text="$ 165.543.00"
+        android:textAlignment="center"
+        android:textDirection="locale"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVwTotalFondo" />
+
+    <TextView
+        android:id="@+id/txtVwTotalFondo"
+        android:layout_width="157dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="223dp"
+        android:text="Total del Fondo"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtListaPrestamos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="128dp"
+        android:text="Lista Prestamo"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVwBalance" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="357dp"
+        android:layout_height="323dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtListaPrestamos">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Escoja el parcipante a recibir prestamo"
+            android:textSize="18sp" />
+
+        <ListView
+            android:id="@+id/lvParticipantesPrestamo"
+            android:layout_width="match_parent"
+            android:layout_height="136dp" />
+
+        <TextView
+            android:id="@+id/txtMontoaPrestar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Monto de prestamo"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/eTxtMontoaPrestar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Escribe la cantidad de prestamo"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:id="@+id/txtCntCuotas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cantidad de cuotas"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etxtCntCuotas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Escribe la cantidad de cuotas"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnPrestar"
+        android:layout_width="202dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="92dp"
+        android:backgroundTint="#B06ABC"
+        android:fontFamily="@font/autour_one"
+        android:text="Listo"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/btnBackPrestamoHome"
+        android:layout_width="85dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPrestar"
+        app:layout_constraintVertical_bias="0.111"
+        app:srcCompat="@drawable/ic_back" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

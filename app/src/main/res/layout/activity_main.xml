@@ -6,29 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btnIniciarParticipante"
-        android:layout_width="310dp"
-        android:layout_height="57dp"
-        android:layout_marginStart="54dp"
-        android:layout_marginEnd="54dp"
-        android:layout_marginBottom="76dp"
-        android:backgroundTint="#B06ABC"
-        android:fontFamily="@font/autour_one"
-        android:text="@string/msgBtnIniciarParticipante"
-        android:textColor="#FFFFFF"
-        app:cornerRadius="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.571"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="TextContrastCheck" />
-
     <TextView
         android:id="@+id/txtVwBienvenido"
         android:layout_width="291dp"
         android:layout_height="46dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="89dp"
+        android:layout_marginEnd="60dp"
         android:fontFamily="@font/autour_one"
         android:rotationX="20"
         android:rotationY="0"
@@ -45,42 +29,41 @@
         android:id="@+id/btnIniciarCajero"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="54dp"
-        android:layout_marginEnd="62dp"
-        android:layout_marginBottom="28dp"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="134dp"
         android:backgroundTint="#B06ABC"
         android:fontFamily="@font/autour_one"
         android:text="@string/msgBtnIniciarCajero"
         android:textColor="#FFFFFF"
         app:cornerRadius="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnIniciarParticipante"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.36"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtVwBienvenido"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
         tools:ignore="TextContrastCheck" />
 
     <ImageView
         android:id="@+id/imgvLogo"
         android:layout_width="324dp"
         android:layout_height="261dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="44dp"
         android:contentDescription="@string/msgImgVwDescription"
         android:rotationX="20"
         android:rotationY="0"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.058"
         app:srcCompat="@drawable/fondoeasyfund" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="291dp"
         android:layout_height="72dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="60dp"
         android:drawableEnd="@drawable/profits_78367"
         android:fontFamily="@font/autour_one"
         android:text="Ahorrar cumple tus sueños, gastar los aleja."
@@ -90,11 +73,8 @@
         android:textStyle="bold"
         app:flow_horizontalAlign="center"
         app:flow_verticalAlign="center"
-        app:layout_constraintBottom_toTopOf="@+id/btnIniciarCajero"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtVwBienvenido"
-        app:layout_constraintVertical_bias="0.318" />
+        app:layout_constraintTop_toBottomOf="@+id/txtVwBienvenido" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
