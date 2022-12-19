@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class WelcomeParticipants extends AppCompatActivity {
 
-    Button btnWelcome;
+    Button btnWelcome, btnBackToLoginW;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +18,7 @@ public class WelcomeParticipants extends AppCompatActivity {
 
 
         btnWelcome = findViewById(R.id.btnWelcome);
+        btnBackToLoginW = findViewById(R.id.btnBackToLoginW);
 
         btnWelcome.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -25,7 +26,13 @@ public class WelcomeParticipants extends AppCompatActivity {
                 goToHome();
             }
         });
+        btnBackToLoginW.setOnClickListener(this::backToLogin);
     }
+    public void backToLogin(View view){
+        Intent back = new Intent(WelcomeParticipants.this,iniciarSesionCajeroActivity.class);
+        startActivity(back);
+    }
+
     public void goToHome(){
         Intent home = new Intent(WelcomeParticipants.this,HomeParticipant.class);
         startActivity(home);

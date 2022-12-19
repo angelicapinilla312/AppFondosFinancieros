@@ -16,7 +16,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="165dp"
         android:fontFamily="@font/autour_one"
-        android:text="Participants "
+        android:text="@string/participants"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,7 +30,7 @@
         android:layout_marginTop="17dp"
         android:layout_marginEnd="133dp"
         android:fontFamily="@font/autour_one"
-        android:text="Participants List"
+        android:text="@string/participants_list"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -53,7 +53,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/autour_one"
-            android:text="ID Card"
+            android:text="@string/id_card"
             android:textSize="16sp" />
 
         <EditText
@@ -62,15 +62,17 @@
             android:layout_height="48dp"
             android:ems="30"
             android:fontFamily="@font/autour_one"
-            android:hint="Write ID Card"
-            android:inputType="textPersonName" />
+            android:hint="@string/write_id_card"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:textColorHint="#9E9E9E" />
 
         <TextView
             android:id="@+id/textView34"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/autour_one"
-            android:text="Name:"
+            android:text="@string/name"
             android:textSize="16sp" />
 
         <EditText
@@ -79,15 +81,17 @@
             android:layout_height="48dp"
             android:ems="10"
             android:fontFamily="@font/autour_one"
-            android:hint="Write name"
-            android:inputType="textPersonName" />
+            android:hint="@string/write_name"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:textColorHint="#9E9E9E" />
 
         <TextView
             android:id="@+id/textView36"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/autour_one"
-            android:text="LastName:"
+            android:text="@string/lastname"
             android:textSize="16sp" />
 
         <EditText
@@ -96,15 +100,17 @@
             android:layout_height="48dp"
             android:ems="10"
             android:fontFamily="@font/autour_one"
-            android:hint="Write lastname"
-            android:inputType="textPersonName" />
+            android:hint="@string/write_lastname"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:textColorHint="#9E9E9E" />
 
         <TextView
             android:id="@+id/textView37"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/autour_one"
-            android:text="PhoneNumber:"
+            android:text="@string/phonenumber"
             android:textSize="16sp" />
 
         <EditText
@@ -113,15 +119,17 @@
             android:layout_height="48dp"
             android:ems="10"
             android:fontFamily="@font/autour_one"
-            android:hint="Write phonenumber"
-            android:inputType="textPersonName" />
+            android:hint="@string/write_phonenumber"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName|textCapSentences"
+            android:textColorHint="#9E9E9E" />
 
         <TextView
             android:id="@+id/textView38"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/autour_one"
-            android:text="Address:"
+            android:text="@string/address"
             android:textSize="16sp" />
 
         <EditText
@@ -130,8 +138,10 @@
             android:layout_height="48dp"
             android:ems="10"
             android:fontFamily="@font/autour_one"
-            android:hint="Write Address"
-            android:inputType="textPersonName" />
+            android:hint="@string/write_address"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:textColorHint="#9E9E9E" />
 
     </LinearLayout>
 
@@ -152,7 +162,7 @@
         android:layout_marginTop="32dp"
         android:backgroundTint="#0B5C64"
         android:fontFamily="@font/autour_one"
-        android:text="Back"
+        android:text="@string/back"
         android:textColor="#FAFAFA"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -49,6 +49,13 @@ public class HomeParticipant extends AppCompatActivity {
                 goToContribution();
             }
         });
+
+        btnBackHomeParti.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                backTo(v);
+            }
+        });
     }
     public  void backTo(View view){
         Intent back = new Intent(HomeParticipant.this,iniciarSesionCajeroActivity.class);
