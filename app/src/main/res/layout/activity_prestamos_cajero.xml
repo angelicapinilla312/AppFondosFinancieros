@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/txtVwBalance"
-        android:layout_width="293dp"
-        android:layout_height="75dp"
+        android:layout_width="283dp"
+        android:layout_height="57dp"
         android:layout_marginStart="56dp"
         android:layout_marginTop="13dp"
         android:layout_marginEnd="62dp"
@@ -45,19 +45,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="147dp"
-        android:layout_marginTop="58dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="128dp"
         android:fontFamily="@font/autour_one"
         android:text="Loan List"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.166"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtVwBalance" />
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="357dp"
-        android:layout_height="323dp"
+        android:layout_width="384dp"
+        android:layout_height="464dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="34dp"
         android:layout_marginEnd="24dp"
@@ -88,7 +89,7 @@
             android:textSize="18sp" />
 
         <EditText
-            android:id="@+id/eTxtMontoaPrestar"
+            android:id="@+id/edtxtMontoaPrestar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -106,12 +107,48 @@
             android:textSize="18sp" />
 
         <EditText
-            android:id="@+id/etxtCntCuotas"
+            android:id="@+id/edtxtAmountDues"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:fontFamily="@font/autour_one"
             android:hint="amount dues"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:id="@+id/txtCntCuotas2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/autour_one"
+            android:text="Participant Name"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edtxParticipantName"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:ems="10"
+            android:fontFamily="@font/autour_one"
+            android:hint="participant name"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:id="@+id/txtCntCuotas3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/autour_one"
+            android:text="Participant Document"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edtxParticipantDoc"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:ems="10"
+            android:fontFamily="@font/autour_one"
+            android:hint="participant document"
             android:inputType="number"
             android:minHeight="48dp" />
 
@@ -121,7 +158,7 @@
         android:id="@+id/btnPrestar"
         android:layout_width="202dp"
         android:layout_height="48dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="48dp"
         android:backgroundTint="#B06ABC"
         android:fontFamily="@font/autour_one"
         android:text="OK"
@@ -147,7 +184,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnPrestar"
-        app:layout_constraintVertical_bias="0.319"
+        app:layout_constraintVertical_bias="0.479"
         tools:ignore="TextContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
