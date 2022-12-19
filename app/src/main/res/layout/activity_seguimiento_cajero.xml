@@ -6,54 +6,31 @@
     android:layout_height="match_parent"
     tools:context=".SeguimientoCajero">
 
-    <TextView
-        android:id="@+id/txtHistorico"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="151dp"
-        android:text="@string/contribution_history"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
 
     <TextView
         android:id="@+id/txtHistorico2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
-        android:layout_marginTop="23dp"
+        android:layout_marginTop="48dp"
         android:layout_marginEnd="151dp"
+        android:fontFamily="@font/autour_one"
         android:text="@string/loan_history"
-        android:textSize="20sp"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lvAportes" />
-
-    <ListView
-        android:id="@+id/lvAportes"
-        android:layout_width="404dp"
-        android:layout_height="278dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="6dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtHistorico"
-        tools:ignore="DuplicateSpeakableTextCheck" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ListView
         android:id="@+id/lvPrestamos"
-        android:layout_width="409dp"
-        android:layout_height="239dp"
+        android:layout_width="410dp"
+        android:layout_height="512dp"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="80dp"
         android:layout_marginEnd="3dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtHistorico2" />
 
