@@ -146,7 +146,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txtListaParticipantes" />
 
     <Button
-        android:id="@+id/btnBackHomeAdmin"
+        android:id="@+id/btnBackParticipantHome"
         android:layout_width="206dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"

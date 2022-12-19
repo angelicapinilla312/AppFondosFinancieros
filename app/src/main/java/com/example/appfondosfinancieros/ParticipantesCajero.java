@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -29,7 +30,7 @@ import java.util.List;
 
 public class ParticipantesCajero extends AppCompatActivity {
 
-    ImageView btnBackParticipantHome;
+    Button btnBackParticipantHome;
     EditText edtxDocument, edtxName, edtxLastName, edtxPhoneNumber, edtxAddress;
     ListView listViewParticipants;
 
