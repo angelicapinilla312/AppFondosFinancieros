@@ -5,9 +5,9 @@ import java.util.Date;
 
 public class Participant implements Serializable {
 
+    private String document;
     private String name;
     private String lastName;
-    private String document;
     private String phoneNumber;
     private String address;
 
@@ -66,9 +66,9 @@ public class Participant implements Serializable {
     @Override
     public String toString() {
         return "Participant{" +
-                "name='" + name + '\'' +
+                "document='" + document + '\'' +
+                ", name='" + name + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", document='" + document + '\'' +
                 ", phoneNumber='" + phoneNumber + '\'' +
                 ", address = '"+ address +'\''+
                 '}';

@@ -11,7 +11,7 @@
         android:layout_height="57dp"
         android:layout_marginTop="48dp"
         android:fontFamily="@font/autour_one"
-        android:text="Loan Request"
+        android:text="@string/loan_request"
         android:textAlignment="center"
         android:textSize="28sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,21 +21,24 @@
     <EditText
         android:id="@+id/editTextNumberDecimal"
         android:layout_width="333dp"
-        android:layout_height="47dp"
+        android:layout_height="48dp"
         android:layout_marginTop="12dp"
         android:ems="10"
+        android:hint="@string/_0"
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.346"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:importantForAutofill="no" />
 
     <TextView
         android:id="@+id/textView16"
         android:layout_width="98dp"
         android:layout_height="18dp"
         android:layout_marginTop="16dp"
-        android:text="Amount:"
+        android:text="@string/amountLoanR"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.089"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,11 +50,15 @@
         android:layout_height="48dp"
         android:layout_marginTop="12dp"
         android:ems="10"
+        android:hint="@string/_2000_09_09"
+        android:importantForAutofill="no"
         android:inputType="date"
+        android:textColorHint="#9E9E9E"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.346"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+        app:layout_constraintTop_toBottomOf="@+id/textView20"
+        tools:ignore="DuplicateSpeakableTextCheck" />
 
     <EditText
         android:id="@+id/editTextDate2"
@@ -59,7 +66,10 @@
         android:layout_height="50dp"
         android:layout_marginTop="12dp"
         android:ems="10"
+        android:hint="@string/_2000_09_09"
+        android:importantForAutofill="no"
         android:inputType="date"
+        android:textColorHint="#9E9E9E"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.337"
         app:layout_constraintStart_toStartOf="parent"
@@ -68,21 +78,23 @@
     <EditText
         android:id="@+id/editTextDate3"
         android:layout_width="337dp"
-        android:layout_height="45dp"
+        android:layout_height="48dp"
         android:layout_marginTop="12dp"
         android:ems="10"
+        android:hint="@string/_34"
         android:inputType="date"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.364"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+        app:layout_constraintTop_toBottomOf="@+id/textView22"
+        android:importantForAutofill="no" />
 
     <TextView
         android:id="@+id/textView20"
         android:layout_width="98dp"
         android:layout_height="18dp"
         android:layout_marginTop="12dp"
-        android:text="Init Date:"
+        android:text="@string/init_date"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.086"
         app:layout_constraintStart_toStartOf="parent"
@@ -93,7 +105,7 @@
         android:layout_width="98dp"
         android:layout_height="18dp"
         android:layout_marginTop="12dp"
-        android:text="End Date:"
+        android:text="@string/end_date"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.089"
         app:layout_constraintStart_toStartOf="parent"
@@ -104,7 +116,7 @@
         android:layout_width="98dp"
         android:layout_height="18dp"
         android:layout_marginTop="12dp"
-        android:text="Amount Fees:"
+        android:text="@string/amount_fees"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.089"
         app:layout_constraintStart_toStartOf="parent"
@@ -113,22 +125,23 @@
     <Button
         android:id="@+id/btnSolicitarPrestamo"
         android:layout_width="165dp"
-        android:layout_height="41dp"
+        android:layout_height="48dp"
         android:layout_marginTop="72dp"
         android:backgroundTint="#B06ABC"
-        android:text="Apply for"
+        android:text="@string/apply_for"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextDate3" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate3"
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/btnRegresarPrestamoToHome"
         android:layout_width="165dp"
-        android:layout_height="41dp"
+        android:layout_height="48dp"
         android:layout_marginTop="36dp"
         android:backgroundTint="#0B5C64"
-        android:text="Back"
+        android:text="@string/back"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

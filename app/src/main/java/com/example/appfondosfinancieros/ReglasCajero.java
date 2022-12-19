@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-
+import android.widget.Toast;
 
 public class ReglasCajero extends AppCompatActivity {
 
@@ -27,6 +27,11 @@ public class ReglasCajero extends AppCompatActivity {
                 regresarMenuReglas(v);
             }
         });
+
+    }
+
+    public void guardarReglas(View view){
+        Toast.makeText(this,"Reglas Actualizadas !",Toast.LENGTH_SHORT).show();
     }
 
 

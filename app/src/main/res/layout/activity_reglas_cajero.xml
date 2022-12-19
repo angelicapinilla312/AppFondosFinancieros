@@ -47,7 +47,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:fontFamily="@font/autour_one"
-            android:hint="Fund name"
+            android:hint="@string/fund_name"
             android:importantForAutofill="no"
             android:inputType="textPersonName"
             android:minHeight="48dp"
@@ -58,7 +58,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/autour_one"
-            android:text="Fund Basis:"
+            android:text="@string/fund_basis"
             android:textSize="18sp" />
 
         <EditText
@@ -67,17 +67,18 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:fontFamily="@font/autour_one"
-            android:hint="$0"
+            android:hint="@string/_0"
             android:importantForAutofill="no"
             android:inputType="number"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            tools:ignore="DuplicateSpeakableTextCheck" />
 
         <TextView
             android:id="@+id/txtMontoPrestamo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/autour_one"
-            android:text="Max Amount Loan:"
+            android:text="@string/max_amount_loan"
             android:textSize="18sp" />
 
         <EditText
@@ -86,7 +87,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:fontFamily="@font/autour_one"
-            android:hint="0"
+            android:hint="@string/_0"
             android:importantForAutofill="no"
             android:inputType="number"
             android:minHeight="48dp" />
@@ -96,7 +97,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/autour_one"
-            android:text="Percentage Interest:"
+            android:text="@string/percentage_interest"
             android:textSize="18sp" />
 
         <EditText
@@ -105,7 +106,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:fontFamily="@font/autour_one"
-            android:hint="2%"
+            android:hint="@string/_2"
             android:importantForAutofill="no"
             android:inputType="numberDecimal"
             android:minHeight="48dp" />
@@ -115,7 +116,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/autour_one"
-            android:text="Max Amount Fees:"
+            android:text="@string/max_amount_fees"
             android:textSize="18sp" />
 
         <EditText
@@ -124,7 +125,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:fontFamily="@font/autour_one"
-            android:hint="24"
+            android:hint="@string/_24"
             android:importantForAutofill="no"
             android:inputType="number"
             android:minHeight="48dp" />
@@ -134,7 +135,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/autour_one"
-            android:text="Suscription Code:"
+            android:text="@string/suscription_code"
             android:textSize="18sp" />
 
 
@@ -150,7 +151,7 @@
                 android:background="#A36DAC"
                 android:fontFamily="@font/autour_one"
                 android:gravity="center"
-                android:text="FXSDF1L"
+                android:text="@string/fxsdf1l"
                 android:textAlignment="center"
                 android:textColor="#F3E5F5"
                 android:textSize="20sp" />
@@ -160,8 +161,8 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/ic_share"
-                android:contentDescription="TODO" />
+                android:contentDescription="@string/imagen_compartir_c_digo_del_fondo"
+                app:srcCompat="@drawable/ic_share" />
 
         </LinearLayout>
 
@@ -173,7 +174,7 @@
         android:layout_height="48dp"
         android:layout_marginBottom="92dp"
         android:backgroundTint="#0B5C64"
-        android:text="Back"
+        android:text="@string/back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -188,11 +189,12 @@
         android:layout_marginTop="48dp"
         android:backgroundTint="#A36DAC"
         android:fontFamily="@font/autour_one"
-        android:text="Save Rules"
+        android:text="@string/save_rules"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="TextContrastCheck" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

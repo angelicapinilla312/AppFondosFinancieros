@@ -5,11 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 public class HomeParticipant extends AppCompatActivity {
 
     ImageView imgVwPayFee, imgVwLoanRequest, imgVwConfiguration, imgVwContribution;
+    Button btnBackHomeParti;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +22,8 @@ public class HomeParticipant extends AppCompatActivity {
         imgVwLoanRequest = findViewById(R.id.imgVwLoanRequest);
         imgVwConfiguration = findViewById(R.id.imgVwConfiguration);
         imgVwContribution = findViewById(R.id.imgVwContribution);
+
+        btnBackHomeParti = findViewById(R.id.btnBackHomeParti);
 
         imgVwPayFee.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,6 +49,17 @@ public class HomeParticipant extends AppCompatActivity {
                 goToContribution();
             }
         });
+
+        btnBackHomeParti.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                backTo(v);
+            }
+        });
+    }
+    public  void backTo(View view){
+        Intent back = new Intent(HomeParticipant.this,iniciarSesionCajeroActivity.class);
+        startActivity(back);
     }
 
     public void goToPayFee(){

@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/txtVwBalance"
-        android:layout_width="293dp"
-        android:layout_height="75dp"
+        android:layout_width="283dp"
+        android:layout_height="57dp"
         android:layout_marginStart="56dp"
         android:layout_marginTop="13dp"
         android:layout_marginEnd="62dp"
@@ -18,14 +18,15 @@
         android:gravity="center"
         android:orientation="horizontal"
         android:outlineProvider="bounds"
-        android:text="$ 165.543.00"
+        android:text="@string/_165_543_00"
         android:textAlignment="center"
         android:textDirection="locale"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtVwTotalFondo" />
+        app:layout_constraintTop_toBottomOf="@+id/txtVwTotalFondo"
+        tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/txtVwTotalFondo"
@@ -33,7 +34,7 @@
         android:layout_height="37dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/autour_one"
-        android:text="Fund Balance"
+        android:text="@string/fund_balance"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.354"
@@ -45,19 +46,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="147dp"
-        android:layout_marginTop="58dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="128dp"
         android:fontFamily="@font/autour_one"
-        android:text="Loan List"
+        android:text="@string/loan_list"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.166"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtVwBalance" />
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="357dp"
-        android:layout_height="323dp"
+        android:layout_width="384dp"
+        android:layout_height="464dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="34dp"
         android:layout_marginEnd="24dp"
@@ -71,7 +73,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/autour_one"
-            android:text="Participant"
+            android:text="@string/participant"
             android:textSize="18sp" />
 
         <ListView
@@ -84,70 +86,114 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/autour_one"
-            android:text="Loan amount"
+            android:text="@string/loan_amount"
             android:textSize="18sp" />
 
         <EditText
-            android:id="@+id/eTxtMontoaPrestar"
+            android:id="@+id/edtxtMontoaPrestar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:fontFamily="@font/autour_one"
-            android:hint="loan amount"
+            android:hint="@string/loan_amount"
+            android:importantForAutofill="no"
             android:inputType="number"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            tools:ignore="DuplicateSpeakableTextCheck" />
 
         <TextView
             android:id="@+id/txtCntCuotas"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/autour_one"
-            android:text="Dues amount"
+            android:text="@string/dues_amount"
             android:textSize="18sp" />
 
         <EditText
-            android:id="@+id/etxtCntCuotas"
+            android:id="@+id/edtxtAmountDues"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:fontFamily="@font/autour_one"
-            android:hint="amount dues"
+            android:hint="@string/amount_dues"
             android:inputType="number"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:id="@+id/txtCntCuotas2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/autour_one"
+            android:text="@string/participant_name"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edtxParticipantName"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:ems="10"
+            android:fontFamily="@font/autour_one"
+            android:hint="@string/participant_name"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:minHeight="48dp"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <TextView
+            android:id="@+id/txtCntCuotas3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/autour_one"
+            android:text="@string/participant_document"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edtxParticipantDoc"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:ems="10"
+            android:fontFamily="@font/autour_one"
+            android:hint="@string/participant_document"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:minHeight="48dp"
+            tools:ignore="DuplicateSpeakableTextCheck" />
 
     </LinearLayout>
 
     <Button
         android:id="@+id/btnPrestar"
-        android:layout_width="202dp"
+        android:layout_width="103dp"
         android:layout_height="48dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="48dp"
         android:backgroundTint="#B06ABC"
         android:fontFamily="@font/autour_one"
-        android:text="OK"
+        android:text="@string/ok"
         android:textColor="#FFFFFF"
         app:cornerRadius="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.129"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
         tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/btnBackPrestamoHome"
-        android:layout_width="202dp"
+        android:layout_width="103dp"
         android:layout_height="48dp"
+        android:layout_marginBottom="100dp"
         android:backgroundTint="#0B5C64"
         android:fontFamily="@font/autour_one"
-        android:text="Back"
+        android:text="@string/back"
         android:textColor="#FFFFFF"
         app:cornerRadius="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.805"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnPrestar"
-        app:layout_constraintVertical_bias="0.319"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.96"
         tools:ignore="TextContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

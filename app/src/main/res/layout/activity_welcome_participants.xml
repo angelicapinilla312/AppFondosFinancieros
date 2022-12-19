@@ -63,7 +63,7 @@
         tools:ignore="TextContrastCheck" />
 
     <Button
-        android:id="@+id/btnWelcome2"
+        android:id="@+id/btnBackToLoginW"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="233dp"
         android:layout_height="48dp"

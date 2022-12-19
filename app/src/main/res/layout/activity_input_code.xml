@@ -10,7 +10,7 @@
     <EditText
         android:id="@+id/edtxCode"
         android:layout_width="237dp"
-        android:layout_height="44dp"
+        android:layout_height="48dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="84dp"
         android:layout_marginEnd="25dp"
@@ -52,11 +52,12 @@
         android:layout_marginTop="136dp"
         android:backgroundTint="#B06ABC"
         android:fontFamily="@font/autour_one"
-        android:text="Validate"
+        android:text="@string/validate"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtxCode" />
+        app:layout_constraintTop_toBottomOf="@+id/edtxCode"
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/btnBackToLogin"
@@ -65,7 +66,7 @@
         android:layout_marginTop="52dp"
         android:backgroundTint="#0B5C64"
         android:fontFamily="@font/autour_one"
-        android:text="Back"
+        android:text="@string/back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
